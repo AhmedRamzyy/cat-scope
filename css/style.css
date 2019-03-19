@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Francois+One');
+*{
+    box-sizing: border-box;
+}
+a{text-decoration: none;}
+.container{width: 85%;margin: auto;}
+.slider{
+    background: url(../images/lecture.jpg) , rgb(84, 9, 9);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+}
+.navbar-header{
+    display: flex;
+    padding-top: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-header .navbar-logo a p{
+    color: #b41e1f;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'Francois One', sans-serif;
+    margin: 0;
+    background: #fff;
+    width: fit-content;
+    padding: 12px;
+}
+.navbar-header .navbar-logo a p span{
+    color: #000;
+}
+.navbar-header .navbar-list ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    justify-content: space-between;
+}
+.navbar-header .navbar-list ul li{
+    display: inline;
+    color: #f0292f;
+}
+.navbar-header .navbar-list ul li a{
+    color: #fff;
+    font-size: 22px;
+    padding-right: 30px;
+    font-family: 'Francois One', sans-serif;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+.navbar-header .navbar-list ul li:last-of-type a{padding-right: 0;}
