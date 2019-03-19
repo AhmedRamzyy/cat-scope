@@ -112,6 +112,7 @@ a{text-decoration: none;}
     font-family: 'Francois One', sans-serif;
     font-family: 'Salsa', cursive;
 }
+.about-scope .about-event h2 i{padding: 8px}
 .about-scope .about-event h2 span{color: #000;}
 .about-scope .about-event p{
     font-size: 30px;
@@ -131,6 +132,23 @@ a{text-decoration: none;}
     margin-top: 20px;
     font-size: 20px;
     border-radius: 30px;
+    text-transform: capitalize;
+}
+.about-scope .about-event a span{
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+    background: transparent;
+    display: inline-block;
+    padding: 5px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+@media only screen and (max-width: 768px){
+    .about-scope .about-event p{
+        font-size: 25px;
+        line-height: 1.3;
+    }
 }
 
 
