@@ -1,9 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Francois+One');
+@import url('https://fonts.googleapis.com/css?family=Francois+One|Salsa|Yanone+Kaffeesatz');
 *{
     box-sizing: border-box;
 }
+body{height: 4000px;}
 a{text-decoration: none;}
 .container{width: 85%;margin: auto;}
+/* --------------------------------------- slider ---------------------------------------  */
 .slider{
     background: url(../images/lecture.jpg) , rgb(84, 9, 9);
     background-size: cover;
@@ -23,7 +25,7 @@ a{text-decoration: none;}
     color: #b41e1f;
     font-size: 25px;
     font-weight: 500;
-    font-family: 'Francois One', sans-serif;
+    font-family: 'Salsa', cursive;
     margin: 0;
     background: #fff;
     width: fit-content;
@@ -80,6 +82,7 @@ a{text-decoration: none;}
     margin: 0;
     font-weight: 100;
     text-transform: capitalize;
+    font-family: 'Salsa', cursive;
     font-size: 30px;
 }
 .slider-title h1 span{color:#000;}
@@ -96,3 +99,40 @@ a{text-decoration: none;}
     #toggele:checked + .navbar-list{display: block;margin-top: 5px;}
     .slider-title{padding: 10em 0 13em 0 ;}
 }
+/* --------------------------------------- about scope ---------------------------------------  */
+.about-scope .about-event{
+    text-align: center;
+    padding: 25px;
+    box-shadow: -7px 9px 8px #d2d1d1;
+}
+.about-scope .about-event h2{
+    margin: 0;
+    color: maroon;
+    text-transform: capitalize;
+    font-family: 'Francois One', sans-serif;
+    font-family: 'Salsa', cursive;
+}
+.about-scope .about-event h2 span{color: #000;}
+.about-scope .about-event p{
+    font-size: 30px;
+    line-height: 2;
+    margin-bottom: 0;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+.about-scope .about-event .cat-scope{color:#c50406}
+.about-scope .about-event .cat-reloaded{color:#c50406;font-weight: bold;}
+.about-scope .about-event a{
+    display: block;
+    background: maroon;
+    width: fit-content;
+    margin: auto;
+    color: #fff;
+    padding: 5px 10px;
+    margin-top: 20px;
+    font-size: 20px;
+    border-radius: 30px;
+}
+
+
+
+
