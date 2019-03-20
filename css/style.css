@@ -30,7 +30,9 @@ a{text-decoration: none;}
     background: #fff;
     width: fit-content;
     padding: 12px;
+    transition: .3s;
 }
+.navbar-header .navbar-logo a p:hover {transform: scale(.9);}
 .navbar-header .navbar-logo a p span{
     color: #000;
 }
@@ -100,9 +102,15 @@ a{text-decoration: none;}
     .slider-title{padding: 10em 0 13em 0 ;}
 }
 /* --------------------------------------- about scope ---------------------------------------  */
+.about-scope{
+    /* position: absolute;
+    top: 26em; */
+    transform: translateY(-40px);
+}
 .about-scope .about-event{
     text-align: center;
     padding: 25px;
+    background:#fff;
     box-shadow: -7px 9px 8px #d2d1d1;
 }
 .about-scope .about-event h2{
@@ -133,7 +141,9 @@ a{text-decoration: none;}
     font-size: 20px;
     border-radius: 30px;
     text-transform: capitalize;
+    transition: .2s ;
 }
+.about-scope .about-event a:hover{ transform: translateY(-5px);}
 .about-scope .about-event a span{
     width: 30px;
     height: 30px;
@@ -150,7 +160,38 @@ a{text-decoration: none;}
         line-height: 1.3;
     }
 }
-
+/* --------------------------------------- speakers---------------------------------------  */
+.speakers .speaker-header h3 {
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 25px;
+    font-size: 35px;
+    color: #800000;
+}
+.speakers .team-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.speakers .team-cards .card {text-align: center;width: 20%;margin-bottom: 30px;}
+.speakers .team-cards .card .img-box {height: 250px;}
+.speakers .team-cards .card .img-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+.speakers .team-cards .card .speaker-name p{
+    margin: 0;
+    background: maroon;
+    width: 100%;
+    color: #fff;
+    padding: 5px;
+}
+@media only screen and (max-width: 768px){
+    .speakers .team-cards .card{width: 45%}
+}
 
 
 
