@@ -191,7 +191,64 @@ a{text-decoration: none;}
     font-family: 'Salsa', cursive;
 }
 @media only screen and (max-width: 768px){
+    .speakers .speaker-header h3{font-size: 20px;}
     .speakers .team-cards .card{width: 45%}
+}
+/* --------------------------------------- scheduler---------------------------------------  */
+.scheduler {background:#33313b; }
+.scheduler .event-info{padding: 25px 0;}
+.scheduler .schedule-header h4 {
+    width: fit-content;
+    color: white;
+    margin: auto;
+    margin-bottom: 20px;
+    font-family: 'Salsa', cursive;
+    font-weight: 100;
+    font-size: 30px;
+}
+.scheduler .event .event-days{
+    width: 40%;
+    margin: auto;
+    display: flex;
+    outline: none;
+    border: none;
+    overflow: hidden;
+    border-radius: 31px;
+    align-items: center;
+    background: #880000;
+}
+.scheduler .event .event-days a {
+    width: 50%;
+    text-align: center;
+    background: #800000;
+    color: #fff;
+    padding: 10px 20px;
+    font-family: 'Salsa', cursive;
+    font-size: 19px;
+    text-transform: capitalize;
+}
+.scheduler .event .event-days a.day1{
+    background: #800000;
+    color: #fff;
+}
+.scheduler .event .event-days a.day2{
+    color: #800000;
+    background: #fff;
+}
+.scheduler .event .event-speakers span{
+    background: #800000;
+    position: relative;
+    width: 2px;
+    height: 100vh;
+    display: block;
+    margin: auto;
+}
+.scheduler .event .event-speakers span i{
+    position: absolute;
+    bottom: 0;
+    left: -4px;
+    font-size: 10px;
+    color: #800000;
 }
 
 
