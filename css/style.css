@@ -140,7 +140,7 @@ a{text-decoration: none;}
     font-size: 20px;
     border-radius: 30px;
     text-transform: capitalize;
-    transition: .2s ;
+    transition: .5s ;
 }
 .about-scope .about-event a:hover{ transform: translateY(-5px);}
 .about-scope .about-event a span{
