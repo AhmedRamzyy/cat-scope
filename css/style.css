@@ -171,7 +171,6 @@ a{text-decoration: none;}
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    
 }
 .speakers .team-cards .card {text-align: center;width: 20%;margin-bottom: 30px;}
 .speakers .team-cards .card .img-box {height: 250px;}
@@ -195,7 +194,7 @@ a{text-decoration: none;}
     .speakers .team-cards .card{width: 45%}
 }
 /* --------------------------------------- scheduler---------------------------------------  */
-.scheduler {background:#33313b; }
+.scheduler {background:#33313b;height: 150vh; }
 .scheduler .event-info{padding: 25px 0;}
 .scheduler .schedule-header h4 {
     width: fit-content;
@@ -237,11 +236,11 @@ a{text-decoration: none;}
 }
 .scheduler .event .event-speakers span{
     background: #800000;
-    position: relative;
+    position: absolute;
+    left: 50%;
     width: 2px;
     height: 100vh;
     display: block;
-    margin: auto;
 }
 .scheduler .event .event-speakers span i{
     position: absolute;
@@ -250,6 +249,41 @@ a{text-decoration: none;}
     font-size: 10px;
     color: #800000;
 }
-
-
+.scheduler .event .event-speakers .event-schedule{
+    width: 400px;
+    height: 100px;
+    padding: 15px;
+    background: #FFF;
+    position: absolute;
+    left: 16.5%;
+    font-size: 25px;
+    margin-top: 30px;
+    font-family: 'Salsa', cursive;
+    color: #800000;
+    border-radius: 6px;
+}
+.scheduler .event .event-speakers .event-schedule:after{
+    content: "";
+    display: inline-block;
+    border-style: solid;
+    border-width: 10px 10px 0px;
+    border-color: #fff transparent;
+    position: absolute;
+    right: -15px;
+    top: 45px;
+    transform: rotate(-90deg);
+}
+.scheduler .event .event-speakers .icon{
+    width: 50px;
+    height: 50px;
+    margin-top: 54px;
+    text-align: center;
+    padding: 13px;
+    border-radius: 50%;
+    position: absolute;
+    left: 48.3%;
+    color: #800;
+    font-size: 25px;
+    background: #fff;
+}
 
