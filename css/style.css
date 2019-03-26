@@ -390,6 +390,7 @@ a {
 }
 .scheduler .event .event-speakers .schedule .event-schedule h4{
     font-size: 25px;
+    font-weight: 100;
     font-family: 'Salsa', cursive;
     color: #800000;
     margin: 0;
@@ -419,6 +420,7 @@ a {
     color: #800;
     font-size: 25px;
     background: #fff;
+    z-index: 1;
 }
 .scheduler .event .event-speakers .schedule span{
     color: #fff;
