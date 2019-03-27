@@ -398,6 +398,7 @@ a {
 .scheduler .event .event-speakers .schedule .event-schedule p{
     font-family: 'Salsa', cursive;
 }
+p.time{display: none;}
 .scheduler .event .event-speakers .schedule .event-schedule:after{
     content: "";
     display: inline-block;
@@ -435,7 +436,25 @@ a {
     left: -15px;
     right: unset!important;
     transform: rotate(90deg)!important ;
-
+}
+@media only screen and (min-width: 300px) and  (max-width: 992px){
+    .scheduler .schedule-header h4{font-size: 20px;}
+    .scheduler .event .event-days{width: 100%;}
+    .scheduler .event .event-days a{font-size: 14px;}
+    .scheduler .event .event-speakers span.line-in-center{display: none;}
+    .scheduler .event .event-speakers .schedule {display: unset;text-align: center}
+    .scheduler .event .event-speakers .schedule .event-schedule{width: auto;height: auto;;}
+    .scheduler .event .event-speakers .schedule .event-schedule h4{font-size: 20px;}
+    .scheduler .event .event-speakers .schedule .event-schedule:after{display: none;}
+    p.time{display: block;margin-bottom: 0;}
+    .scheduler .event .event-speakers .schedule .icon{display: none;}
+    .scheduler .event .event-speakers .schedule span {display: none;}
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+    .scheduler .event .event-speakers span.line-in-center{height: 93vh;}
+    .scheduler .event .event-speakers .schedule{padding-left: 0;}
+    .scheduler .event .event-speakers .schedule .event-schedule{width: 390px;}
+    .row-revers{padding-right: 0;}
 }
 
 
