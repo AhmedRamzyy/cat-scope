@@ -3,20 +3,13 @@
 * {
     box-sizing: border-box;
 }
-
-body {
-    height: 7000px;
-}
-
 a {
     text-decoration: none;
 }
-
 .container {
     width: 85%;
     margin: auto;
 }
-
 /* --------------------------------------- slider ---------------------------------------  */
 .slider {
     background: url(../images/lecture.jpg), rgb(84, 9, 9);
@@ -25,7 +18,6 @@ a {
     background-blend-mode: overlay;
 
 }
-
 .navbar-header {
     display: flex;
     flex-wrap: wrap;
@@ -307,7 +299,7 @@ a {
 /* --------------------------------------- scheduler---------------------------------------  */
 .scheduler {
     background: #34495e;
-    background-image: linear-gradient( 135deg, #F05F57 10%, #360940 100%);;
+    background-image: linear-gradient( 135deg, #F05F57 10%, #360940 100%);
 }
 
 .scheduler .event-info {
@@ -518,60 +510,69 @@ p.time{display: none;}
     .location .our-location h6{font-size: 20px;}
     .location .our-location iframe {width: 100%}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .scheduler .event .event-speakers .event-schedule {
-    width: 400px;
-    height: 100px;
-    padding: 15px;
-    background: #FFF;
-    position: absolute;
-    left: 16.5%;
-    font-size: 25px;
-    margin-top: 30px;
-    font-family: 'Salsa', cursive;
-    color: #800000;
-    border-radius: 6px;
+/* --------------------------------------- cat reloaded site ---------------------------------------  */
+.cat-brief {
+    background: #34495e;
+    background-image: linear-gradient( 135deg, #F05F57 10%, #360940 100%);
+    padding: 30px;
 }
-
-.scheduler .event .event-speakers .event-schedule:after {
-    content: "";
-    display: inline-block;
-    border-style: solid;
-    border-width: 10px 10px 0px;
-    border-color: #fff transparent;
-    position: absolute;
-    right: -15px;
-    top: 45px;
-    transform: rotate(-90deg);
-}
-
-.scheduler .event .event-speakers .icon {
-    width: 50px;
-    height: 50px;
-    margin-top: 54px;
+.cat-brief .brief-about-cat-reloaded p{
+    color: #fff;
     text-align: center;
-    padding: 13px;
-    border-radius: 50%;
-    position: absolute;
-    left: 48.3%;
-    color: #800;
     font-size: 25px;
-    background: #fff;
-} */
+    font-family: 'Salsa', cursive;
+    margin-top: 0;
+}
+.cat-brief .brief-about-cat-reloaded p span{
+    color: #000;
+    text-transform: uppercase;
+}
+.cat-brief .brief-about-cat-reloaded a {
+    display: block;
+    background: #000;
+    width: fit-content;
+    margin: auto;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 20px;
+    font-family: 'Salsa', cursive;
+    text-transform: uppercase;
+    border-radius: 30px;
+    transition: .5s;
+}
+.cat-brief .brief-about-cat-reloaded a:hover {
+    transform: translateY(-5px);
+}
+
+.cat-brief .brief-about-cat-reloaded a span {
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+    background: transparent;
+    display: inline-block;
+    padding: 5px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+.cat-brief .brief-about-cat-reloaded .cat-reloded-links ul{
+    list-style: none;
+    width: fit-content;
+    display: flex;
+    margin: auto;
+    padding-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+.cat-brief .brief-about-cat-reloaded .cat-reloded-links ul li a {background: transparent;}
+.cat-brief .brief-about-cat-reloaded .cat-reloded-links ul li a span {text-align: center;}
+/* --------------------------------------- footer ---------------------------------------  */
+footer{background: #1b1a1a;}
+footer p{
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-family: 'Salsa', cursive;
+    margin: 0;
+}
+
