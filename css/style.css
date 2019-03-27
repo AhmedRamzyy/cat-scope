@@ -5,7 +5,7 @@
 }
 
 body {
-    height: 4000px;
+    height: 7000px;
 }
 
 a {
@@ -456,9 +456,42 @@ p.time{display: none;}
     .scheduler .event .event-speakers .schedule .event-schedule{width: 390px;}
     .row-revers{padding-right: 0;}
 }
+/* --------------------------------------- roll in ---------------------------------------  */
+.roll-in{padding: 30px 0px;}
+.roll-in .registing h5{
+    font-size: 30px;
+    font-family: 'Salsa', cursive;
+    margin: 30px 0;
+    margin-top: 0;
+    text-align: center;
+    color: #800;
+    text-transform: uppercase;
+}
+.roll-in .registing .buttons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.roll-in .registing .buttons a{
+    padding: 10px 70px;
+    color: #fff;
+    font-size: 25px;
+    font-family: 'Salsa', cursive;
+    border-radius: 30px;
+
+}
+.roll-in .registing .buttons .register{
+    background: #800;
+}
+.roll-in .registing .buttons .support{
+    background: #000;
+}
+@media only screen and (max-width: 768px){
+    .roll-in .registing h5{font-size: 20px;}
+    .roll-in .registing .buttons a{padding: 10px 20px;font-size: 14px;}
 
 
-
+}
 
 
 
