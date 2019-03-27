@@ -470,7 +470,10 @@ p.time{display: none;}
     font-size: 25px;
     font-family: 'Salsa', cursive;
     border-radius: 30px;
-
+    transition: .5s;
+}
+.roll-in .registing .buttons a:hover{
+    transform: translateY(-5px) ;
 }
 .roll-in .registing .buttons .register{
     background: #800;
@@ -560,13 +563,18 @@ p.time{display: none;}
     display: flex;
     margin: auto;
     padding-top: 20px;
+    padding-left: 0;
     align-items: center;
     justify-content: space-between;
 }
 .cat-brief .brief-about-cat-reloaded .cat-reloded-links ul li a {background: transparent;}
 .cat-brief .brief-about-cat-reloaded .cat-reloded-links ul li a span {text-align: center;}
+@media only screen and (max-width: 768px){
+    .cat-brief .brief-about-cat-reloaded p{font-size: 20px;}
+    .cat-brief .brief-about-cat-reloaded a{padding: 5px; font-size: 15px;}
+}
 /* --------------------------------------- footer ---------------------------------------  */
-footer{background: #1b1a1a;}
+footer{background: #1b1a1a; padding: 10px;}
 footer p{
     text-align: center;
     color: #fff;
