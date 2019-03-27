@@ -489,13 +489,35 @@ p.time{display: none;}
 @media only screen and (max-width: 768px){
     .roll-in .registing h5{font-size: 20px;}
     .roll-in .registing .buttons a{padding: 10px 20px;font-size: 14px;}
-
-
 }
+/* --------------------------------------- location ---------------------------------------  */
 
-
-
-
+.location{
+    background: #1b1a1a;
+    padding: 30px;
+}
+.location .our-location h6{
+    margin-top: 0;
+    font-family: 'Salsa', cursive;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+}
+.location .our-location iframe{
+    width: 50%;
+    border-radius: 10px;
+    border: 3px solid #fff;
+    height: 300px;
+    display: block;
+    margin: auto;
+}
+@media only screen and (max-width: 768px){
+    .location .our-location h6{font-size: 20px;}
+    .location .our-location iframe {width: 100%}
+}
 
 
 
