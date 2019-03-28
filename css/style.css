@@ -158,7 +158,7 @@ a {
 
 .speakers .team-cards {display: flex;flex-wrap: wrap;justify-content: space-between;}
 
-.speakers .team-cards .card {text-align: center;width: 20%;margin-bottom: 30px;}
+.speakers .team-cards .card {text-align: center;width: 20%;margin-bottom: 30px;box-shadow: 0 28px 16px -26px black;}
 
 .speakers .team-cards .card .img-box {height: 250px;}
 
@@ -337,6 +337,7 @@ p.time{display: none;}
     font-size: 25px;
     font-family: 'Salsa', cursive;
     border-radius: 30px;
+    box-shadow: 0 28px 16px -26px black;
     transition: .5s;
 }
 
@@ -438,7 +439,7 @@ p.time{display: none;}
 @media only screen and (max-width: 768px){ /* on mobile screen*/
 
     .cat-brief .brief-about-cat-reloaded p{font-size: 20px;}
-    
+
     .cat-brief .brief-about-cat-reloaded a{padding: 5px; font-size: 15px;}
 }
 /* --------------------------------------- footer ---------------------------------------  */
