@@ -13,7 +13,7 @@ a {text-decoration: none;}
 .main-font{font-family: 'Salsa', cursive;}
 
 .main-button{display: block;
-    background: maroon;
+    background: #800;
     width: fit-content;
     margin: auto;
     color: #fff;
@@ -26,11 +26,11 @@ a {text-decoration: none;}
 .main-button:hover {transform: translateY(-5px);}
 
 /* --------------------------------------- slider ---------------------------------------  */
-.slider {background: url(../images/lecture.jpg), rgb(84, 9, 9);background-size: cover;background-position: center;background-blend-mode: overlay;}
+.slider {background: url(../images/lecture.jpg), #541f1f;background-size: cover;background-position: center;background-blend-mode: overlay;}
 
 .navbar-header {padding-top: 15px;}
 
-.navbar-header .navbar-logo a p {color: #b41e1f;font-size: 25px;font-weight: 500;margin: 0;background: #fff;width: fit-content;padding: 12px;transition: .3s;}
+.navbar-header .navbar-logo a p {color: #bf0000;font-size: 25px;font-weight: 500;margin: 0;background: #fff;width: fit-content;padding: 12px;transition: .3s;}
 
 .navbar-header .navbar-logo a p:hover {transform: scale(.9);}
 
@@ -80,7 +80,7 @@ a {text-decoration: none;}
 
 .about-scope .about-event {text-align: center;padding: 25px;background: #fff;box-shadow: -7px 9px 8px #d2d1d1;}
 
-.about-scope .about-event h2 {margin: 0;color: maroon;text-transform: capitalize;}
+.about-scope .about-event h2 {margin: 0;color: #800;text-transform: capitalize;}
 
 .about-scope .about-event h2 i {padding: 8px}
 
@@ -88,11 +88,11 @@ a {text-decoration: none;}
 
 .about-scope .about-event p {font-size: 30px;line-height: 2;margin-bottom: 0;font-family: 'Yanone Kaffeesatz', sans-serif;}
 
-.about-scope .about-event .cat-scope {color: #c50406}
+.about-scope .about-event .cat-scope {color: #800}
 
 .about-scope .about-event a span{width: 30px;height: 30px;font-size: 15px;background: transparent;display: inline-block;padding: 5px;border: 2px solid #fff;border-radius: 50%;}
 /* --------------------------------------- speakers---------------------------------------  */
-.speakers .speaker-header h3 {width: fit-content;margin: auto;margin-bottom: 25px;font-size: 35px;color: #800000;}
+.speakers .speaker-header h3 {width: fit-content;margin: auto;margin-bottom: 25px;font-size: 35px;color: #800;}
 
 .speakers .team-cards .card {text-align: center;width: 20%;margin-bottom: 30px;box-shadow: 0 28px 16px -26px black;}
 
@@ -102,7 +102,7 @@ a {text-decoration: none;}
 
 .speakers .team-cards .card .img-box img:hover {object-position: top;}
 
-.speakers .team-cards .card .speaker-name p {margin: 0;background: maroon;width: 100%;color: #fff;padding: 5px;font-family: 'Salsa', cursive;}
+.speakers .team-cards .card .speaker-name p {margin: 0;background: #800;width: 100%;color: #fff;padding: 5px;font-family: 'Salsa', cursive;}
 
 /* --------------------------------------- scheduler---------------------------------------  */
 .scheduler {background: #34495e;background-image: linear-gradient( 135deg, #F05F57 10%, #360940 100%);}
@@ -113,21 +113,21 @@ a {text-decoration: none;}
 
 .scheduler .event .event-days {width: 40%;margin: auto;outline: none;border: none;overflow: hidden;border-radius: 31px;background: #880000;}
 
-.scheduler .event .event-days a {width: 50%;text-align: center;background: #800000;color: #fff;padding: 10px 20px;font-size: 19px;text-transform: capitalize;}
+.scheduler .event .event-days a {width: 50%;text-align: center;background: #800;color: #fff;padding: 10px 20px;font-size: 19px;text-transform: capitalize;}
 
-.scheduler .event .event-days a.day1 {background: #800000;color: #fff;}
+.scheduler .event .event-days a.day1 {background: #800;color: #fff;}
 
-.scheduler .event .event-days a.day2 {color: #800000;background: #fff;}
+.scheduler .event .event-days a.day2 {color: #800;background: #fff;}
 
-.scheduler .event .event-speakers span.line-in-center {background: #800000;position: absolute;left: 50%;width: 2px;height: 200vh;display: block;}
+.scheduler .event .event-speakers span.line-in-center {background: #800;position: absolute;left: 50%;width: 2px;height: 200vh;display: block;}
 
-.scheduler .event .event-speakers span i {position: absolute;bottom: 0;left: -4px;font-size: 10px;color: #800000;}
+.scheduler .event .event-speakers span i {position: absolute;bottom: 0;left: -4px;font-size: 10px;color: #800;}
 
 .scheduler .event .event-speakers .schedule{justify-content: unset;padding-left: 112px;padding-top: 20px;}
 
 .scheduler .event .event-speakers .schedule .event-schedule{width: 400px;margin-right: 0;height: 120px;padding: 15px;background: #FFF;position: relative;border-radius: 6px;}
 
-.scheduler .event .event-speakers .schedule .event-schedule h4{font-size: 25px;font-weight: 100;color: #800000;margin: 0;}
+.scheduler .event .event-speakers .schedule .event-schedule h4{font-size: 25px;font-weight: 100;color: #800;margin: 0;}
 
 .scheduler .event .event-speakers .schedule .event-schedule:after{
     content: "";
