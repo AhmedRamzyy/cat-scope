@@ -20,17 +20,17 @@
     <section class="slider">
         <div class="container">
             <nav>
-                <div class="navbar-header">
+                <div class="navbar-header display-flex">
                     <div class="navbar-logo">
                         <a href="#" title="Scope 15">
-                            <p>scope <span> 15</span></p>
+                            <p class="main-font">scope <span> 15</span></p>
                         </a>
                     </div>
-                    <label for="toggele" title="Menu">&#9776</label>
-                    <input type="checkbox" id="toggele" />
+                    <label for="toggele" title="Menu" class="hidden">&#9776</label>
+                    <input type="checkbox" id="toggele" class="hidden" />
                     <div class="navbar-list">
-                        <ul>
-                            <li><a href="#about-scope" class="active" title="About"> About</a></li>
+                        <ul class="display-flex">
+                            <li><a href="#about-scope" title="About"> About</a></li>
                             <li><a href="#speakers" title="Speakers"> Speakers</a></li>
                             <li><a href="#schedule" title="Schedule"> Schedule</a></li>
                             <li><a href="#roll-in" title="Roll in"> Roll in</a></li>
@@ -40,7 +40,7 @@
                 </div>
             </nav>
             <div class="slider-title">
-                <h1>scope <span> 15</span></h1>
+                <h1 class="main-font">scope <span> 15</span></h1>
                 <p>are you ready to meet the expets!</p>
             </div>
         </div>
@@ -49,16 +49,16 @@
     <section class="about-scope" id="about-scope">
         <div class="container">
             <div class="about-event">
-                <h2><i class="far fa-question-circle"></i>about scope <span>15</span></h2>
+                <h2 class="main-font"><i class="far fa-question-circle"></i>about scope <span>15</span></h2>
                 <p><span class="cat-scope">CAT Scope</span> is a 2 days conferance.Organized by the <span
-                        class="cat-reloaded">CAT
+                        class="cat-scope">CAT
                         Reloaded</span> Team where
                     pure technical sessions are held by highly experienced Engineers and Computer Lovers </p>
                 <p>These sessions are mainly focused on IT Computer Science and some sessions may be soft-skills,Scope
                     sessions range from novice to gurus. <span class="cat-scope">Scope 15</span> is must attend event
                     for everyone
                     interested in computer science </p>
-                <a href="#" title="Apply On Facebook Event"><span><i class="fab fa-facebook-f"></i></span> facebook
+                <a href="#" class="main-font main-button" title="Apply On Facebook Event"><span><i class="fab fa-facebook-f"></i></span> facebook
                     event</a>
             </div>
         </div>
@@ -67,47 +67,9 @@
     <section class="speakers" id="speakers">
         <div class="container">
             <div class="speaker-header">
-                <h3><i class="fas fa-users"></i> Speakers</h3>
+                <h3 class="main-font"><i class="fas fa-users"></i> Speakers</h3>
             </div>
-            <div class="team-cards">
-
-                <div class="card">
-                    <div class="img-box">
-                        <img src="images/team.jpg" alt="it is a picture of our speaker maybe male or female" title="ahmed alfy"/>
-                    </div>
-                    <div class="speaker-name">
-                        <p>Ahmed Alfy</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="img-box">
-                        <img src="images/team.jpg" alt="it is a picture of our speaker maybe male or female" title="ahmed alfy"/>
-                    </div>
-                    <div class="speaker-name">
-                        <p>Ahmed Alfy</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="img-box">
-                        <img src="images/team.jpg" alt="it is a picture of our speaker maybe male or female" title="ahmed alfy"/>
-                    </div>
-                    <div class="speaker-name">
-                        <p>Ahmed Alfy</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="img-box">
-                        <img src="images/team.jpg" alt="it is a picture of our speaker maybe male or female" title="ahmed alfy"/>
-                    </div>
-                    <div class="speaker-name">
-                        <p>Ahmed Alfy</p>
-                    </div>
-                </div>
-            </div>
-            <div class="team-cards">
+            <div class="team-cards display-flex">
 
                 <div class="card">
                     <div class="img-box">
@@ -145,7 +107,45 @@
                     </div>
                 </div>
             </div>
-            <div class="team-cards">
+            <div class="team-cards display-flex">
+
+                <div class="card">
+                    <div class="img-box">
+                        <img src="images/team.jpg" alt="it is a picture of our speaker maybe male or female" title="ahmed alfy"/>
+                    </div>
+                    <div class="speaker-name">
+                        <p>Ahmed Alfy</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img-box">
+                        <img src="images/team.jpg" alt="it is a picture of our speaker maybe male or female" title="ahmed alfy"/>
+                    </div>
+                    <div class="speaker-name">
+                        <p>Ahmed Alfy</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img-box">
+                        <img src="images/team.jpg" alt="it is a picture of our speaker maybe male or female" title="ahmed alfy"/>
+                    </div>
+                    <div class="speaker-name">
+                        <p>Ahmed Alfy</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img-box">
+                        <img src="images/team.jpg" alt="it is a picture of our speaker maybe male or female" title="ahmed alfy"/>
+                    </div>
+                    <div class="speaker-name">
+                        <p>Ahmed Alfy</p>
+                    </div>
+                </div>
+            </div>
+            <div class="team-cards display-flex">
 
                 <div class="card">
                     <div class="img-box">
@@ -188,92 +188,92 @@
     <!-- scheduler -->
     <section class="scheduler" id="schedule">
         <div class="container">
-            <div class="event-info">
+            <div class="event-info main-font">
                 <div class="schedule-header">
                     <h4><i class="far fa-clock"></i> Schedule</h4>
                 </div>
                 <article class="event">
-                    <div class="event-days">
-                        <a href="#" class="day1" title="day 1|29 april"> day 1|29 april </a>
+                    <div class="event-days display-flex">
+                        <a href="#" class="day1 " title="day 1|29 april"> day 1|29 april </a>
                         <a href="#" class="day2" title="day 2|30 april"> day 2|30 april </a>
                     </div>
                     <div class="event-speakers">
                         <span class="line-in-center"><i class="fas fa-circle"></i></span>
-                        <div class="schedule">
+                        <div class="schedule display-flex">
                             <div class="event-schedule">
                                 <h4> Registeration</h4>
-                                <p class="time">10:00</p>
+                                <p class="time hidden">10:00</p>
                             </div>
                             <div class="icon"> <i class="far fa-file-alt"></i></div>
                             <span>10:00</span>
                         </div>
-                        <div class="schedule row-revers">
+                        <div class="schedule row-revers display-flex">
                             <div class="event-schedule">
                                 <h4> About Cat</h4>
                                 <p>Do you know how Awesome cat is ?</p>
-                                <p class="time">10:30</p>
+                                <p class="time hidden">10:30</p>
                             </div>
                             <div class="icon"> <i class="fas fa-microphone"></i></div>
                             <span>10:30</span>
                         </div>
-                        <div class="schedule">
+                        <div class="schedule display-flex">
                             <div class="event-schedule">
                                 <h4> 1|Unboxing Flexbox</h4>
                                 <p>Noura Mahmoud</p>
-                                <p class="time">11:00</p>
+                                <p class="time hidden">11:00</p>
                             </div>
                             <div class="icon"> <i class="fas fa-microphone"></i></div>
                             <span>11:00</span>
                         </div>
-                        <div class="schedule row-revers">
+                        <div class="schedule row-revers display-flex">
                             <div class="event-schedule">
                                 <h4>2|Fahmi,the bot</h4>
-                                <p>Al Sayed Gamal</p>
-                                <p class="time">11:30</p>
+                                <p >Al Sayed Gamal</p>
+                                <p class="time hidden">11:30</p>
                             </div>
                             <div class="icon"> <i class="fas fa-microphone"></i></div>
                             <span>11:30</span>
                         </div>
-                        <div class="schedule">
+                        <div class="schedule display-flex">
                             <div class="event-schedule">
                                 <h4> Coffee break</h4>
-                                <p class="time">12:00</p>
+                                <p class="time hidden">12:00</p>
                             </div>
                             <div class="icon"> <i class="fas fa-mug-hot"></i></div>
                             <span>12:00</span>
                         </div>
-                        <div class="schedule row-revers">
+                        <div class="schedule row-revers display-flex">
                             <div class="event-schedule">
                                 <h4>3|Neural Networks,Deep Learning </h4>
                                 <p>Hazem Nomer</p>
-                                <p class="time">12:30</p>
+                                <p class="time hidden">12:30</p>
                             </div>
                             <div class="icon"> <i class="fas fa-microphone"></i></div>
                             <span>12:30</span>
                         </div>
-                        <div class="schedule">
+                        <div class="schedule display-flex">
                             <div class="event-schedule">
                                 <h4>4|Animation Workshop</h4>
                                 <p>Marwa Fahmy</p>
-                                <p class="time">1:00</p>
+                                <p class="time hidden">1:00</p>
                             </div>
                             <div class="icon"> <i class="fas fa-microphone"></i></div>
                             <span>1:00</span>
                         </div>
-                        <div class="schedule row-revers">
+                        <div class="schedule row-revers display-flex">
                             <div class="event-schedule">
                                 <h4>5|Disrete Mathematics</h4>
                                 <p>Ahmed Khaled</p>
-                                <p class="time">2:00</p>
+                                <p class="time hidden">2:00</p>
                             </div>
                             <div class="icon"> <i class="fas fa-microphone"></i></div>
                             <span>2:00</span>
                         </div>
-                        <div class="schedule">
+                        <div class="schedule display-flex">
                             <div class="event-schedule">
                                 <h4>6|Docker</h4>
                                 <p>Mohamed Fawzy</p>
-                                <p class="time">3:00</p>
+                                <p class="time hidden">3:00</p>
                             </div>
                             <div class="icon"> <i class="fas fa-microphone"></i></div>
                             <span>3:00</span>
@@ -286,11 +286,11 @@
     <!-- roll in section -->
     <section class="roll-in" id="roll-in">
         <div class="container">
-            <div class="registing">
+            <div class="registing main-font">
                 <h5><i class="far fa-hand-paper"></i> Roll in</h5>
-                <div class="buttons">
-                    <a href="#" class="register" title="register">Register</a>
-                    <a href="#" class="support" title="support us">support us</a>
+                <div class="buttons display-flex">
+                    <a href="#" class="register main-button" title="register">Register</a>
+                    <a href="#" class="support main-button" title="support us">support us</a>
                 </div>
             </div>
         </div>
@@ -298,7 +298,7 @@
     <!-- location -->
     <section class="location" id="location">
         <div class="container">
-            <div class="our-location">
+            <div class="our-location main-font">
                 <h6><i class="fas fa-map-marked-alt"></i> location</h6>
                 <iframe src="https://www.youtube.com/embed/ovvbCTjmqz0?rel=0" frameborder="0" ></iframe>
             </div>
@@ -307,24 +307,24 @@
     <!-- cat reloded site -->
     <section class="cat-brief">
         <div class="container">
-            <div class="brief-about-cat-reloaded">
+            <div class="brief-about-cat-reloaded main-font">
                 <p><span>cat reloaded</span> is non-profit foundation focused on computer science and IT especially Open Source technologies </p>
-                <a href="https://www.facebook.com/CATReloaded/" target="_blank" title="cat reloaded site"><span><i class="fas fa-globe"></i></span> cat reloaded site</a>
+                <a class="main-button" href="https://www.facebook.com/CATReloaded/" target="_blank" title="cat reloaded site"><span><i class="fas fa-globe"></i></span> cat reloaded site</a>
                 <div class="cat-reloded-links">
-                    <ul>
-                        <li><a href="https://www.facebook.com/CATReloaded/" target="_blank" title="facebook"><span><i class="fab fa-facebook-f"></i></span></a></li>
-                        <li><a href="https://twitter.com/CATReloaded" target="_blank" title="twitter"><span><i class="fab fa-twitter"></i></span></a></li>
-                        <li><a href="https://github.com/CATReloaded" target="_blank" title="github"><span><i class="fab fa-github"></i></span></a></li>
-                        <li><a href="https://www.youtube.com/user/CATHangouts" target="_blank" title="youtube"><span><i class="fab fa-youtube"></i></span></a></li>
-                        <li><a href="https://www.linkedin.com/company/cat-reloaded/about/" target="_blank" title="linkedin"><span><i class="fab fa-linkedin-in"></i></span></a></li>
-                        <li><a href="https://plus.google.com/u/0/102237547104197397502" target="_blank" title="google plus"><span><i class="fab fa-glide-g"></i></span></a></li>
+                    <ul class="display-flex">
+                        <li><a class="main-button" href="https://www.facebook.com/CATReloaded/" target="_blank" title="facebook"><span><i class="fab fa-facebook-f"></i></span></a></li>
+                        <li><a class="main-button" href="https://twitter.com/CATReloaded" target="_blank" title="twitter"><span><i class="fab fa-twitter"></i></span></a></li>
+                        <li><a class="main-button" href="https://github.com/CATReloaded" target="_blank" title="github"><span><i class="fab fa-github"></i></span></a></li>
+                        <li><a class="main-button" href="https://www.youtube.com/user/CATHangouts" target="_blank" title="youtube"><span><i class="fab fa-youtube"></i></span></a></li>
+                        <li><a class="main-button" href="https://www.linkedin.com/company/cat-reloaded/about/" target="_blank" title="linkedin"><span><i class="fab fa-linkedin-in"></i></span></a></li>
+                        <li><a class="main-button" href="https://plus.google.com/u/0/102237547104197397502" target="_blank" title="google plus"><span><i class="fab fa-glide-g"></i></span></a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
     <!-- footer -->
-    <footer>
+    <footer class="main-font">
         <p>scope 15|cat reloaded 2019</p>
     </footer>
 

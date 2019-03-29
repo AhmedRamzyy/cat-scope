@@ -10,6 +10,25 @@ a {
     width: 85%;
     margin: auto;
 }
+.display-flex{display: flex;flex-wrap: wrap;justify-content: space-between;align-items: center;}
+
+.hidden{display: none;}
+
+.main-font{font-family: 'Salsa', cursive;}
+
+.main-button{display: block;
+    background: maroon;
+    width: fit-content;
+    margin: auto;
+    color: #fff;
+    padding: 5px 10px;
+    margin-top: 20px;
+    font-size: 20px;
+    border-radius: 30px;
+    text-transform: capitalize;
+    transition: all .5s ease-in-out;}
+.main-button:hover {transform: translateY(-5px);}
+
 /* --------------------------------------- slider ---------------------------------------  */
 .slider {
     background: url(../images/lecture.jpg), rgb(84, 9, 9);
@@ -17,37 +36,19 @@ a {
     background-position: center;
     background-blend-mode: overlay;
 }
-.navbar-header {
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 15px;
-    justify-content: space-between;
-    align-items: center;
-}
+.navbar-header {padding-top: 15px;}
 
-.navbar-header .navbar-logo a p {
-    color: #b41e1f;
-    font-size: 25px;
-    font-weight: 500;
-    font-family: 'Salsa', cursive;
-    margin: 0;
-    background: #fff;
-    width: fit-content;
-    padding: 12px;
-    transition: .3s;
-}
+.navbar-header .navbar-logo a p {color: #b41e1f;font-size: 25px;font-weight: 500;margin: 0;background: #fff;width: fit-content;padding: 12px;transition: .3s;}
 
 .navbar-header .navbar-logo a p:hover {transform: scale(.9);}
 
 .navbar-header .navbar-logo a p span {color: #000;}
 
-.navbar-header label {font-size: 30px;color: #fff;display: none;cursor: pointer}
+.navbar-header label {font-size: 30px;color: #fff;cursor: pointer}
 
-.navbar-header #toggele {display: none;}
+.navbar-header .navbar-list ul {list-style: none;margin: 0;}
 
-.navbar-header .navbar-list ul {list-style: none;display: flex;flex-wrap: wrap;margin: 0;justify-content: space-between;}
-
-.navbar-header .navbar-list ul li {display: inline;color: #f0292f;}
+.navbar-header .navbar-list ul li {display: inline;}
 
 .navbar-header .navbar-list ul li a {
     color: #fff;
@@ -59,7 +60,6 @@ a {
     font-weight: 100;
     position: relative;
 }
-
 .navbar-header .navbar-list ul li a:after {
     content: '';
     position: absolute;
@@ -72,39 +72,23 @@ a {
     transition: .3s;
     margin: auto;
 }
-
 .navbar-header .navbar-list ul li a:hover:after {width: 100%}
 
 .navbar-header .navbar-list ul li:last-of-type a {margin-right: 0;}
 
 .slider-title {color: #fff;text-align: center;padding: 8em 11em 11em;font-family: 'Francois One', sans-serif;}
 
-.slider-title h1 {margin: 0;font-weight: 100;text-transform: capitalize;font-family: 'Salsa', cursive;font-size: 30px;}
+.slider-title h1 {margin: 0;font-weight: 100;text-transform: capitalize;font-size: 30px;}
 
 .slider-title h1 span {color: #000;}
 
 .slider-title p {text-transform: capitalize;font-size: 25px;margin: 15px;}
-
-@media only screen and (max-width: 768px) { /*on mobile screen */
-    .navbar-header label {display: block;}
-
-    .navbar-header .navbar-list {display: none;width: 100%;text-align: center;}
-
-    .navbar-header .navbar-list ul li {width: 100%;padding-bottom: 10px;margin: 5px;}
-
-    .navbar-header .navbar-list ul li a {margin: 0;letter-spacing: 3px;word-spacing: 5px}
-
-    #toggele:checked+.navbar-list {display: block;margin-top: 5px;}
-
-    .slider-title {padding: 10em 0 13em 0;}
-}
-
 /* --------------------------------------- about scope ---------------------------------------  */
 .about-scope {transform: translateY(-40px);}
 
 .about-scope .about-event {text-align: center;padding: 25px;background: #fff;box-shadow: -7px 9px 8px #d2d1d1;}
 
-.about-scope .about-event h2 {margin: 0;color: maroon;text-transform: capitalize;font-family: 'Salsa', cursive;}
+.about-scope .about-event h2 {margin: 0;color: maroon;text-transform: capitalize;}
 
 .about-scope .about-event h2 i {padding: 8px}
 
@@ -114,49 +98,9 @@ a {
 
 .about-scope .about-event .cat-scope {color: #c50406}
 
-.about-scope .about-event .cat-reloaded {color: #c50406;font-weight: bold;}
-
-.about-scope .about-event a {
-    display: block;
-    background: maroon;
-    width: fit-content;
-    margin: auto;
-    color: #fff;
-    padding: 5px 10px;
-    margin-top: 20px;
-    font-size: 20px;
-    border-radius: 30px;
-    text-transform: capitalize;
-    transition: .5s;
-}
-
-.about-scope .about-event a:hover {transform: translateY(-5px);}
-
-.about-scope .about-event a span {
-    width: 30px;
-    height: 30px;
-    font-size: 15px;
-    background: transparent;
-    display: inline-block;
-    padding: 5px;
-    border: 2px solid #fff;
-    border-radius: 50%;
-}
-
-@media only screen and (max-width: 768px) { /* on mobile screen*/
-    .about-scope .about-event p {font-size: 25px;line-height: 1.3;}
-}
-
+.about-scope .about-event a span{width: 30px;height: 30px;font-size: 15px;background: transparent;display: inline-block;padding: 5px;border: 2px solid #fff;border-radius: 50%;}
 /* --------------------------------------- speakers---------------------------------------  */
-.speakers .speaker-header h3 {
-    width: fit-content;
-    margin: auto;
-    margin-bottom: 25px;
-    font-size: 35px;
-    color: #800000;
-}
-
-.speakers .team-cards {display: flex;flex-wrap: wrap;justify-content: space-between;}
+.speakers .speaker-header h3 {width: fit-content;margin: auto;margin-bottom: 25px;font-size: 35px;color: #800000;}
 
 .speakers .team-cards .card {text-align: center;width: 20%;margin-bottom: 30px;box-shadow: 0 28px 16px -26px black;}
 
@@ -168,88 +112,30 @@ a {
 
 .speakers .team-cards .card .speaker-name p {margin: 0;background: maroon;width: 100%;color: #fff;padding: 5px;font-family: 'Salsa', cursive;}
 
-@media only screen and (max-width: 768px) { /* on mobile screen*/
-    .speakers .speaker-header h3 {font-size: 20px;}
-
-    .speakers .team-cards .card {width: 45%}
-}
-
 /* --------------------------------------- scheduler---------------------------------------  */
 .scheduler {background: #34495e;background-image: linear-gradient( 135deg, #F05F57 10%, #360940 100%);}
 
 .scheduler .event-info {padding: 25px 0;}
 
-.scheduler .schedule-header h4 {
-    width: fit-content;
-    color: white;
-    margin: auto;
-    margin-bottom: 20px;
-    font-family: 'Salsa', cursive;
-    font-weight: 100;
-    font-size: 30px;
-}
+.scheduler .schedule-header h4 {width: fit-content;color: white;margin: auto;margin-bottom: 20px;font-weight: 100;font-size: 30px;}
 
-.scheduler .event .event-days {
-    width: 40%;
-    margin: auto;
-    display: flex;
-    outline: none;
-    border: none;
-    overflow: hidden;
-    border-radius: 31px;
-    align-items: center;
-    background: #880000;
-}
+.scheduler .event .event-days {width: 40%;margin: auto;outline: none;border: none;overflow: hidden;border-radius: 31px;background: #880000;}
 
-.scheduler .event .event-days a {
-    width: 50%;
-    text-align: center;
-    background: #800000;
-    color: #fff;
-    padding: 10px 20px;
-    font-family: 'Salsa', cursive;
-    font-size: 19px;
-    text-transform: capitalize;
-}
+.scheduler .event .event-days a {width: 50%;text-align: center;background: #800000;color: #fff;padding: 10px 20px;font-size: 19px;text-transform: capitalize;}
 
 .scheduler .event .event-days a.day1 {background: #800000;color: #fff;}
 
 .scheduler .event .event-days a.day2 {color: #800000;background: #fff;}
 
-.scheduler .event .event-speakers span.line-in-center {
-    background: #800000;
-    position: absolute;
-    left: 50%;
-    width: 2px;
-    height: 200vh;
-    display: block;
-}
+.scheduler .event .event-speakers span.line-in-center {background: #800000;position: absolute;left: 50%;width: 2px;height: 200vh;display: block;}
 
 .scheduler .event .event-speakers span i {position: absolute;bottom: 0;left: -4px;font-size: 10px;color: #800000;}
 
-.scheduler .event .event-speakers .schedule{display: flex;align-items: center;padding-left: 112px;padding-top: 20px;}
+.scheduler .event .event-speakers .schedule{justify-content: unset;padding-left: 112px;padding-top: 20px;}
 
-.scheduler .event .event-speakers .schedule .event-schedule{
-    width: 400px;
-    margin-right: 0;
-    height: 120px;
-    padding: 15px;
-    background: #FFF;
-    position: relative;
-    border-radius: 6px;
-}
+.scheduler .event .event-speakers .schedule .event-schedule{width: 400px;margin-right: 0;height: 120px;padding: 15px;background: #FFF;position: relative;border-radius: 6px;}
 
-.scheduler .event .event-speakers .schedule .event-schedule h4{
-    font-size: 25px;
-    font-weight: 100;
-    font-family: 'Salsa', cursive;
-    color: #800000;
-    margin: 0;
-}
-
-.scheduler .event .event-speakers .schedule .event-schedule p{font-family: 'Salsa', cursive;}
-
-p.time{display: none;}
+.scheduler .event .event-speakers .schedule .event-schedule h4{font-size: 25px;font-weight: 100;color: #800000;margin: 0;}
 
 .scheduler .event .event-speakers .schedule .event-schedule:after{
     content: "";
@@ -282,15 +168,80 @@ p.time{display: none;}
 
 .row-revers .event-schedule:after{left: -15px;right: unset!important;transform: rotate(90deg)!important ;}
 
-@media only screen and (min-width: 300px) and  (max-width: 992px){ /*on mobile screen*/
+/* --------------------------------------- roll in ---------------------------------------  */
+.roll-in{padding: 30px 0px;}
 
+.roll-in .registing h5{font-size: 30px;margin: 30px 0;margin-top: 0;text-align: center;color: #800;text-transform: uppercase;}
+
+.roll-in .registing .buttons {justify-content: space-around;}
+
+.roll-in .registing .buttons a{padding: 10px 70px;font-size: 25px;}
+
+.roll-in .registing .buttons .support{background: #000;}
+
+/* --------------------------------------- location ---------------------------------------  */
+.location{background: #1b1a1a;padding: 30px;}
+
+.location .our-location h6{margin-top: 0;font-weight: 100;text-transform: uppercase;margin-bottom: 30px;text-align: center;color: #fff;font-size: 30px;}
+
+.location .our-location iframe{width: 50%;border-radius: 10px;border: 3px solid #fff;height: 300px;display: block;margin: auto;}
+
+/* --------------------------------------- cat reloaded site ---------------------------------------  */
+.cat-brief {background: #34495e;background-image: linear-gradient( 135deg, #F05F57 10%, #360940 100%);padding: 30px;}
+
+.cat-brief .brief-about-cat-reloaded p{color: #fff;text-align: center;font-size: 25px;margin-top: 0;}
+
+.cat-brief .brief-about-cat-reloaded p span{color: #000;text-transform: uppercase;}
+
+.cat-brief .brief-about-cat-reloaded a {background: #000;padding: 5px 10px;}
+
+.cat-brief .brief-about-cat-reloaded a span {width: 30px;height: 30px;font-size: 15px;background: transparent;display: inline-block;padding: 5px;border: 2px solid #fff;border-radius: 50%;}
+
+.cat-brief .brief-about-cat-reloaded .cat-reloded-links ul{list-style: none;width: fit-content;margin: auto;padding-top: 20px;padding-left: 0;}
+
+.cat-brief .brief-about-cat-reloaded .cat-reloded-links ul li a {background: transparent;}
+
+.cat-brief .brief-about-cat-reloaded .cat-reloded-links ul li a span {text-align: center;}
+/* --------------------------------------- footer ---------------------------------------  */
+footer{background: #1b1a1a; padding: 10px;}
+
+footer p{text-align: center;color: #fff;font-size: 20px;text-transform: capitalize;margin: 0;}
+/* --------------------------------------- responsive for navbar header   ---------------------------------------  */
+@media only screen and (max-width: 768px) {
+    .navbar-header label {display: block;}
+
+    .navbar-header .navbar-list {display: none;width: 100%;text-align: center;}
+
+    .navbar-header .navbar-list ul li {width: 100%;padding-bottom: 10px;margin: 5px;}
+
+    .navbar-header .navbar-list ul li a {margin: 0;letter-spacing: 3px;word-spacing: 5px}
+
+    #toggele:checked+.navbar-list {display: block;margin-top: 5px;}
+
+    .slider-title {padding: 10em 0 13em 0;}
+}
+/* --------------------------------------- responsive for about scope    ---------------------------------------  */
+@media only screen and (max-width: 768px) {
+    .about-scope .about-event p {font-size: 25px;line-height: 1.3;}
+}
+/* --------------------------------------- responsive for speakers    ---------------------------------------  */
+@media only screen and (max-width: 768px) {
+    .speakers .speaker-header h3 {font-size: 20px;}
+
+    .speakers .team-cards .card {width: 45%}
+}
+/* --------------------------------------- responsive for scheuler    ---------------------------------------  */
+@media only screen and (min-width: 300px) and  (max-width: 992px){
     .scheduler .schedule-header h4{font-size: 20px;}
 
     .scheduler .event .event-days{width: 100%;}
 
     .scheduler .event .event-days a{font-size: 14px;}
 
-    .scheduler .event .event-speakers span.line-in-center{display: none;}
+    .scheduler .event .event-speakers span.line-in-center,
+    .scheduler .event .event-speakers .schedule .icon,
+    .scheduler .event .event-speakers .schedule span,
+    .scheduler .event .event-speakers .schedule .event-schedule:after{display: none;}
 
     .scheduler .event .event-speakers .schedule {display: unset;text-align: center}
 
@@ -298,16 +249,9 @@ p.time{display: none;}
 
     .scheduler .event .event-speakers .schedule .event-schedule h4{font-size: 20px;}
 
-    .scheduler .event .event-speakers .schedule .event-schedule:after{display: none;}
-
     p.time{display: block;margin-bottom: 0;}
-
-    .scheduler .event .event-speakers .schedule .icon{display: none;}
-
-    .scheduler .event .event-speakers .schedule span {display: none;}
 }
-@media only screen and (min-width: 992px) and (max-width: 1200px){ /* on medium screen*/
-
+@media only screen and (min-width: 992px) and (max-width: 1200px){
     .scheduler .event .event-speakers span.line-in-center{height: 93vh;}
 
     .scheduler .event .event-speakers .schedule{padding-left: 0;}
@@ -316,140 +260,22 @@ p.time{display: none;}
 
     .row-revers{padding-right: 0;}
 }
-/* --------------------------------------- roll in ---------------------------------------  */
-.roll-in{padding: 30px 0px;}
-
-.roll-in .registing h5{
-    font-size: 30px;
-    font-family: 'Salsa', cursive;
-    margin: 30px 0;
-    margin-top: 0;
-    text-align: center;
-    color: #800;
-    text-transform: uppercase;
-}
-
-.roll-in .registing .buttons{display: flex;justify-content: space-around;align-items: center;}
-
-.roll-in .registing .buttons a{
-    padding: 10px 70px;
-    color: #fff;
-    font-size: 25px;
-    font-family: 'Salsa', cursive;
-    border-radius: 30px;
-    box-shadow: 0 28px 16px -26px black;
-    transition: .5s;
-}
-
-.roll-in .registing .buttons a:hover{transform: translateY(-5px) ;}
-
-.roll-in .registing .buttons .register{background: #800;}
-
-.roll-in .registing .buttons .support{background: #000;}
-
-@media only screen and (max-width: 768px){ /* on mobile screen*/
+/* --------------------------------------- responsive for roll in    ---------------------------------------  */
+@media only screen and (max-width: 768px){
     .roll-in .registing h5{font-size: 20px;}
 
     .roll-in .registing .buttons a{padding: 10px 20px;font-size: 14px;}
 }
-/* --------------------------------------- location ---------------------------------------  */
-
-.location{background: #1b1a1a;padding: 30px;}
-
-.location .our-location h6{
-    margin-top: 0;
-    font-family: 'Salsa', cursive;
-    font-weight: 100;
-    text-transform: uppercase;
-    margin-bottom: 30px;
-    text-align: center;
-    color: #fff;
-    font-size: 30px;
-}
-
-.location .our-location iframe{
-    width: 50%;
-    border-radius: 10px;
-    border: 3px solid #fff;
-    height: 300px;
-    display: block;
-    margin: auto;
-}
-
-@media only screen and (max-width: 768px){ /* on mobile screen*/
-
+/* --------------------------------------- responsive for location   ---------------------------------------  */
+@media only screen and (max-width: 768px){
     .location .our-location h6{font-size: 20px;}
 
     .location .our-location iframe {width: 100%}
 }
-/* --------------------------------------- cat reloaded site ---------------------------------------  */
-.cat-brief {background: #34495e;background-image: linear-gradient( 135deg, #F05F57 10%, #360940 100%);padding: 30px;}
-
-.cat-brief .brief-about-cat-reloaded p{
-    color: #fff;
-    text-align: center;
-    font-size: 25px;
-    font-family: 'Salsa', cursive;
-    margin-top: 0;
-}
-
-.cat-brief .brief-about-cat-reloaded p span{color: #000;text-transform: uppercase;}
-
-.cat-brief .brief-about-cat-reloaded a {
-    display: block;
-    background: #000;
-    width: fit-content;
-    margin: auto;
-    color: #fff;
-    padding: 5px 10px;
-    font-size: 20px;
-    font-family: 'Salsa', cursive;
-    text-transform: uppercase;
-    border-radius: 30px;
-    transition: .5s;
-}
-
-.cat-brief .brief-about-cat-reloaded a:hover {transform: translateY(-5px);}
-
-.cat-brief .brief-about-cat-reloaded a span {
-    width: 30px;
-    height: 30px;
-    font-size: 15px;
-    background: transparent;
-    display: inline-block;
-    padding: 5px;
-    border: 2px solid #fff;
-    border-radius: 50%;
-}
-.cat-brief .brief-about-cat-reloaded .cat-reloded-links ul{
-    list-style: none;
-    width: fit-content;
-    display: flex;
-    margin: auto;
-    padding-top: 20px;
-    padding-left: 0;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.cat-brief .brief-about-cat-reloaded .cat-reloded-links ul li a {background: transparent;}
-
-.cat-brief .brief-about-cat-reloaded .cat-reloded-links ul li a span {text-align: center;}
-
-@media only screen and (max-width: 768px){ /* on mobile screen*/
-
+/* --------------------------------------- responsive for cat reloaded site   ---------------------------------------  */
+@media only screen and (max-width: 768px){
     .cat-brief .brief-about-cat-reloaded p{font-size: 20px;}
 
     .cat-brief .brief-about-cat-reloaded a{padding: 5px; font-size: 15px;}
-}
-/* --------------------------------------- footer ---------------------------------------  */
-footer{background: #1b1a1a; padding: 10px;}
-footer p{
-    text-align: center;
-    color: #fff;
-    font-size: 20px;
-    text-transform: capitalize;
-    font-family: 'Salsa', cursive;
-    margin: 0;
 }
 
