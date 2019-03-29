@@ -1,15 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Francois+One|Salsa|Yanone+Kaffeesatz');
 
-* {
-    box-sizing: border-box;
-}
-a {
-    text-decoration: none;
-}
-.container {
-    width: 85%;
-    margin: auto;
-}
+* {box-sizing: border-box;}
+
+a {text-decoration: none;}
+
+.container {width: 85%;margin: auto;}
+
 .display-flex{display: flex;flex-wrap: wrap;justify-content: space-between;align-items: center;}
 
 .hidden{display: none;}
@@ -26,16 +22,12 @@ a {
     font-size: 20px;
     border-radius: 30px;
     text-transform: capitalize;
-    transition: all .5s ease-in-out;}
+    transition: .5s ;}
 .main-button:hover {transform: translateY(-5px);}
 
 /* --------------------------------------- slider ---------------------------------------  */
-.slider {
-    background: url(../images/lecture.jpg), rgb(84, 9, 9);
-    background-size: cover;
-    background-position: center;
-    background-blend-mode: overlay;
-}
+.slider {background: url(../images/lecture.jpg), rgb(84, 9, 9);background-size: cover;background-position: center;background-blend-mode: overlay;}
+
 .navbar-header {padding-top: 15px;}
 
 .navbar-header .navbar-logo a p {color: #b41e1f;font-size: 25px;font-weight: 500;margin: 0;background: #fff;width: fit-content;padding: 12px;transition: .3s;}
@@ -197,7 +189,7 @@ a {
 
 .cat-brief .brief-about-cat-reloaded a span {width: 30px;height: 30px;font-size: 15px;background: transparent;display: inline-block;padding: 5px;border: 2px solid #fff;border-radius: 50%;}
 
-.cat-brief .brief-about-cat-reloaded .cat-reloded-links ul{list-style: none;width: fit-content;margin: auto;padding-top: 20px;padding-left: 0;}
+.cat-brief .brief-about-cat-reloaded .cat-reloded-links ul{list-style: none;width: fit-content;margin: auto;padding-top: 20px;padding-left: 0;flex-wrap: nowrap;}
 
 .cat-brief .brief-about-cat-reloaded .cat-reloded-links ul li a {background: transparent;}
 
