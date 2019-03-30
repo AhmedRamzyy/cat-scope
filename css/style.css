@@ -96,14 +96,13 @@ a {text-decoration: none;}
 
 .speakers .team-cards .card {text-align: center;width: 20%;margin-bottom: 30px;box-shadow: 0 28px 16px -26px black;}
 
-.speakers .team-cards .card .img-box {height: 250px;background: #800;}
+.speakers .team-cards .card figure {height: 250px;background: #800;margin: 0;}
 
-.speakers .team-cards .card .img-box img {width: 100%;height: 100%;object-fit: cover;transition: all .3s ease-out}
+.speakers .team-cards .card figure img {width: 100%;height: 100%;object-fit: cover;transition: all .3s ease-out}
 
-.speakers .team-cards .card .img-box img:hover {transform: scale3d(.95,.95,1)}
+.speakers .team-cards .card figure img:hover {transform: scale3d(.95,.95,1)}
 
-.speakers .team-cards .card .speaker-name p {margin: 0;background: #800;width: 100%;color: #fff;padding: 5px;font-family: 'Salsa', cursive;}
-
+.speakers .team-cards .card figcaption p {margin: 0;background: #800;width: 100%;color: #fff;padding: 5px;font-family: 'Salsa', cursive;}
 /* --------------------------------------- scheduler---------------------------------------  */
 .scheduler {background: #34495e;background-image: linear-gradient( 135deg, #F05F57 10%, #360940 100%);}
 
