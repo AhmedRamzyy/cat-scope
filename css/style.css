@@ -22,7 +22,7 @@ a {text-decoration: none;}
     font-size: 20px;
     border-radius: 30px;
     text-transform: capitalize;
-    transition: .5s ;}
+    transition: all .3s ease-out ;}
 .main-button:hover {transform: translateY(-5px);}
 
 /* --------------------------------------- slider ---------------------------------------  */
@@ -30,7 +30,7 @@ a {text-decoration: none;}
 
 .navbar-header {padding-top: 15px;}
 
-.navbar-header .navbar-logo a p {color: #bf0000;font-size: 25px;font-weight: 500;margin: 0;background: #fff;width: fit-content;padding: 12px;transition: .3s;}
+.navbar-header .navbar-logo a p {color: #bf0000;font-size: 25px;font-weight: 500;margin: 0;background: #fff;width: fit-content;padding: 12px;transition: all .3s ease-out}
 
 .navbar-header .navbar-logo a p:hover {transform: scale(.9);}
 
@@ -61,7 +61,7 @@ a {text-decoration: none;}
     right: 0;
     background-color: #fff;
     height: 2px;
-    transition: .3s;
+    transition: all .3s ease-out;
     margin: auto;
 }
 .navbar-header .navbar-list ul li a:hover:after {width: 100%}
@@ -98,7 +98,7 @@ a {text-decoration: none;}
 
 .speakers .team-cards .card .img-box {height: 250px;background: maroon;}
 
-.speakers .team-cards .card .img-box img {width: 100%;height: 100%;object-fit: cover;transition: all .5s;}
+.speakers .team-cards .card .img-box img {width: 100%;height: 100%;object-fit: cover;transition: all .3s ease-out}
 
 .speakers .team-cards .card .img-box img:hover {transform: scale3d(.95,.95,1)}
 
@@ -162,20 +162,14 @@ a {text-decoration: none;}
 
 /* --------------------------------------- roll in ---------------------------------------  */
 .roll-in{padding: 30px 0px;}
-
 .roll-in .registing h5{font-size: 30px;margin: 30px 0;margin-top: 0;text-align: center;color: #800;text-transform: uppercase;}
-
 .roll-in .registing .buttons {justify-content: space-around;}
-
 .roll-in .registing .buttons a{padding: 10px 70px;font-size: 25px;}
-
 .roll-in .registing .buttons .support{background: #000;}
 
 /* --------------------------------------- location ---------------------------------------  */
 .location{background: #1b1a1a;padding: 30px;}
-
 .location .our-location h6{margin-top: 0;font-weight: 100;text-transform: uppercase;margin-bottom: 30px;text-align: center;color: #fff;font-size: 30px;}
-
 .location .our-location iframe{width: 50%;border-radius: 10px;border: 3px solid #fff;height: 300px;display: block;margin: auto;}
 
 /* --------------------------------------- cat reloaded site ---------------------------------------  */
@@ -201,15 +195,10 @@ footer p{text-align: center;color: #fff;font-size: 20px;text-transform: capitali
 /* --------------------------------------- responsive for navbar header   ---------------------------------------  */
 @media only screen and (max-width: 768px) {
     .navbar-header label {display: block;}
-
     .navbar-header .navbar-list {display: none;width: 100%;text-align: center;}
-
     .navbar-header .navbar-list ul li {width: 100%;padding-bottom: 10px;margin: 5px;}
-
     .navbar-header .navbar-list ul li a {margin: 0;letter-spacing: 3px;word-spacing: 5px}
-
     #toggele:checked+.navbar-list {display: block;margin-top: 5px;}
-
     .slider-title {padding: 10em 0 13em 0;}
 }
 /* --------------------------------------- responsive for about scope    ---------------------------------------  */
@@ -219,7 +208,6 @@ footer p{text-align: center;color: #fff;font-size: 20px;text-transform: capitali
 /* --------------------------------------- responsive for speakers    ---------------------------------------  */
 @media only screen and (max-width: 768px) {
     .speakers .speaker-header h3 {font-size: 20px;}
-
     .speakers .team-cards .card {width: 45%}
 }
 /* --------------------------------------- responsive for scheuler    ---------------------------------------  */
@@ -245,29 +233,23 @@ footer p{text-align: center;color: #fff;font-size: 20px;text-transform: capitali
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px){
     .scheduler .event .event-speakers span.line-in-center{height: 93vh;}
-
     .scheduler .event .event-speakers .schedule{padding-left: 0;}
-
     .scheduler .event .event-speakers .schedule .event-schedule{width: 390px;}
-
     .row-revers{padding-right: 0;}
 }
 /* --------------------------------------- responsive for roll in    ---------------------------------------  */
 @media only screen and (max-width: 768px){
     .roll-in .registing h5{font-size: 20px;}
-
     .roll-in .registing .buttons a{padding: 10px 20px;font-size: 14px;}
 }
 /* --------------------------------------- responsive for location   ---------------------------------------  */
 @media only screen and (max-width: 768px){
     .location .our-location h6{font-size: 20px;}
-
     .location .our-location iframe {width: 100%}
 }
 /* --------------------------------------- responsive for cat reloaded site   ---------------------------------------  */
 @media only screen and (max-width: 768px){
     .cat-brief .brief-about-cat-reloaded p{font-size: 20px;}
-
     .cat-brief .brief-about-cat-reloaded a{padding: 5px; font-size: 15px;}
 }
 
