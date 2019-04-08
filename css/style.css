@@ -29,7 +29,6 @@ a {text-decoration: none;}
 
 /* --------------------------------------- slider ---------------------------------------  */
 .slider {background: url(../images/lecture.jpg), #541f1f;background-size: cover;background-position: center;background-blend-mode: overlay;}
-
 .navbar-header {padding-top: 15px;}
 
 .navbar-header .navbar-logo a p {
@@ -209,7 +208,7 @@ a {text-decoration: none;}
 
 .location .our-location h6{margin-top: 0;font-weight: 100;text-transform: uppercase;margin-bottom: 30px;text-align: center;color:#fff;font-size: 30px;}
 
-.location .our-location iframe {width: 50%;border-radius: 10px;border: 3px solid #fff;height: 300px;display: block;margin: auto;}
+.location .our-location iframe {width: 50%;border-radius: 10px;border: 3px solid #fff;height: 300px;display: block;margin: auto}
 
 /* --------------------------------------- cat reloaded site ---------------------------------------  */
 .cat-brief {background: #34495e;background-image: linear-gradient(135deg, #F05F57 10%, #360940 100%);padding: 30px;}
