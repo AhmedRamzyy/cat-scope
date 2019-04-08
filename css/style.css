@@ -6,13 +6,14 @@ a {text-decoration: none;}
 
 .container {width: 85%;margin: auto;}
 
-.display-flex{display: flex;flex-wrap: wrap;justify-content: space-between;align-items: center;}
+.display-flex {display: flex;flex-wrap: wrap;justify-content: space-between;align-items: center;}
 
-.hidden{display: none;}
+.hidden {display: none;}
 
-.main-font{font-family: 'Salsa', cursive;}
+.main-font {font-family: 'Salsa', cursive;}
 
-.main-button{display: block;
+.main-button {
+    display: block;
     background: #800;
     width: fit-content;
     margin: auto;
@@ -22,7 +23,8 @@ a {text-decoration: none;}
     font-size: 20px;
     border-radius: 30px;
     text-transform: capitalize;
-    transition: all .3s ease-out ;}
+    transition: all .3s ease-out;
+}
 .main-button:hover {transform: translateY(-10px);box-shadow: 0px 15px 20px rgba(0, 0, 0, .3);}
 
 /* --------------------------------------- slider ---------------------------------------  */
@@ -30,7 +32,16 @@ a {text-decoration: none;}
 
 .navbar-header {padding-top: 15px;}
 
-.navbar-header .navbar-logo a p {color: #bf0000;font-size: 25px;font-weight: 500;margin: 0;background: #fff;width: fit-content;padding: 12px;transition: all .3s ease-out}
+.navbar-header .navbar-logo a p {
+    color: #bf0000;
+    font-size: 25px;
+    font-weight: 500;
+    margin: 0;
+    background: #fff;
+    width: fit-content;
+    padding: 12px;
+    transition: all .3s ease-out
+}
 
 .navbar-header .navbar-logo a p:hover {transform: scale(.9);}
 
@@ -52,6 +63,7 @@ a {text-decoration: none;}
     font-weight: 100;
     position: relative;
 }
+
 .navbar-header .navbar-list ul li a:after {
     content: '';
     position: absolute;
@@ -64,6 +76,7 @@ a {text-decoration: none;}
     transition: all .3s ease-out;
     margin: auto;
 }
+
 .navbar-header .navbar-list ul li a:hover:after {width: 100%}
 
 .navbar-header .navbar-list ul li:last-of-type a {margin-right: 0;}
@@ -75,6 +88,7 @@ a {text-decoration: none;}
 .slider-title h1 span {color: #000;}
 
 .slider-title p {text-transform: capitalize;font-size: 25px;margin: 15px;}
+
 /* --------------------------------------- about scope ---------------------------------------  */
 .about-scope {transform: translateY(-40px);}
 
@@ -90,7 +104,17 @@ a {text-decoration: none;}
 
 .about-scope .about-event .cat-scope {color: #800}
 
-.about-scope .about-event a span{width: 30px;height: 30px;font-size: 15px;background: transparent;display: inline-block;padding: 5px;border: 2px solid #fff;border-radius: 50%;}
+.about-scope .about-event a span {
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+    background: transparent;
+    display: inline-block;
+    padding: 5px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+
 /* --------------------------------------- speakers---------------------------------------  */
 .speakers .speaker-header h3 {width: fit-content;margin: auto;margin-bottom: 25px;font-size: 35px;color: #800;}
 
@@ -100,11 +124,12 @@ a {text-decoration: none;}
 
 .speakers .team-cards .card .img-box img {width: 100%;height: 100%;object-fit: cover;transition: all .3s ease-out}
 
-.speakers .team-cards .card .img-box img:hover {transform: scale3d(.95,.95,1)}
+.speakers .team-cards .card .img-box img:hover {transform: scale3d(.95, .95, 1)}
 
 .speakers .team-cards .card .speaker-name p {margin: 0;background: #800;width: 100%;color: #fff;padding: 5px;font-family: 'Salsa', cursive;}
+
 /* --------------------------------------- scheduler---------------------------------------  */
-.scheduler {background: #34495e;background-image: linear-gradient( 135deg, #F05F57 10%, #360940 100%);}
+.scheduler {background: #34495e;background-image: linear-gradient(135deg, #F05F57 10%, #360940 100%);}
 
 .scheduler .event-info {padding: 25px 0;}
 
@@ -112,7 +137,7 @@ a {text-decoration: none;}
 
 .scheduler .event .event-days {width: 40%;margin: auto;outline: none;border: none;overflow: hidden;border-radius: 31px;background: #880000;}
 
-.scheduler .event .event-days a {width: 50%;text-align: center;background: #800;color: #fff;padding: 10px 20px;font-size: 19px;text-transform: capitalize;}
+.scheduler .event .event-days a{width: 50%;text-align: center;background:#800;color:#fff;padding: 10px 20px;font-size: 19px;text-transform: capitalize;}
 
 .scheduler .event .event-days a.day1 {background: #800;color: #fff;}
 
@@ -122,13 +147,21 @@ a {text-decoration: none;}
 
 .scheduler .event .event-speakers span i {position: absolute;bottom: 0;left: -4px;font-size: 10px;color: #800;}
 
-.scheduler .event .event-speakers .schedule{justify-content: unset;padding-left: 112px;padding-top: 20px;}
+.scheduler .event .event-speakers .schedule {justify-content: unset;padding-left: 112px;padding-top: 20px;}
 
-.scheduler .event .event-speakers .schedule .event-schedule{width: 400px;margin-right: 0;height: 120px;padding: 15px;background: #FFF;position: relative;border-radius: 6px;}
+.scheduler .event .event-speakers .schedule .event-schedule {
+    width: 400px;
+    margin-right: 0;
+    height: 120px;
+    padding: 15px;
+    background: #FFF;
+    position: relative;
+    border-radius: 6px;
+}
 
-.scheduler .event .event-speakers .schedule .event-schedule h5{font-size: 25px;font-weight: 100;color: #800;margin: 0;}
+.scheduler .event .event-speakers .schedule .event-schedule h5 {font-size: 25px;font-weight: 100;color: #800;margin: 0;}
 
-.scheduler .event .event-speakers .schedule .event-schedule:after{
+.scheduler .event .event-speakers .schedule .event-schedule:after {
     content: "";
     display: inline-block;
     border-style: solid;
@@ -140,7 +173,7 @@ a {text-decoration: none;}
     transform: rotate(-90deg);
 }
 
-.scheduler .event .event-speakers .schedule  .icon {
+.scheduler .event .event-speakers .schedule .icon {
     width: 50px;
     height: 50px;
     margin-left: 20px;
@@ -153,49 +186,79 @@ a {text-decoration: none;}
     background: #fff;
     z-index: 1;
 }
-.scheduler .event .event-speakers .schedule span{color: #fff;font-size: 22px;}
 
-.row-revers{flex-direction: row-reverse;padding-right: 112px;}
+.scheduler .event .event-speakers .schedule span {color: #fff;font-size: 22px;}
 
-.row-revers .event-schedule:after{left: -15px;right: unset!important;transform: rotate(90deg)!important ;}
+.row-revers {flex-direction: row-reverse;padding-right: 112px;}
+
+.row-revers .event-schedule:after {left: -15px;right: unset !important;transform: rotate(90deg) !important;}
 
 /* --------------------------------------- roll in ---------------------------------------  */
-.roll-in{padding: 30px 0px;}
-.roll-in .registing h5{font-size: 30px;margin: 30px 0;margin-top: 0;text-align: center;color: #800;text-transform: uppercase;}
+.roll-in {padding: 30px 0px;}
+
+.roll-in .registing h5 {font-size: 30px;margin: 30px 0;margin-top: 0;text-align: center;color: #800;text-transform: uppercase;}
+
 .roll-in .registing .buttons {justify-content: space-around;}
-.roll-in .registing .buttons a{padding: 10px 70px;font-size: 25px;}
-.roll-in .registing .buttons .support{background: #000;}
+
+.roll-in .registing .buttons a {padding: 10px 70px;font-size: 25px;}
+
+.roll-in .registing .buttons .support {background: #000;}
 
 /* --------------------------------------- location ---------------------------------------  */
-.location{background: #1b1a1a;padding: 30px;}
-.location .our-location h6{margin-top: 0;font-weight: 100;text-transform: uppercase;margin-bottom: 30px;text-align: center;color: #fff;font-size: 30px;}
-.location .our-location iframe{width: 50%;border-radius: 10px;border: 3px solid #fff;height: 300px;display: block;margin: auto;}
+.location {background: #1b1a1a;padding: 30px;}
+
+.location .our-location h6{margin-top: 0;font-weight: 100;text-transform: uppercase;margin-bottom: 30px;text-align: center;color:#fff;font-size: 30px;}
+
+.location .our-location iframe {width: 50%;border-radius: 10px;border: 3px solid #fff;height: 300px;display: block;margin: auto;}
 
 /* --------------------------------------- cat reloaded site ---------------------------------------  */
-.cat-brief {background: #34495e;background-image: linear-gradient( 135deg, #F05F57 10%, #360940 100%);padding: 30px;}
+.cat-brief {background: #34495e;background-image: linear-gradient(135deg, #F05F57 10%, #360940 100%);padding: 30px;}
 
-.cat-brief .brief-about-cat-reloaded p{color: #fff;text-align: center;font-size: 25px;margin-top: 0;}
+.cat-brief .brief-about-cat-reloaded p {color: #fff;text-align: center;font-size: 25px;margin-top: 0;}
 
 .cat-brief .brief-about-cat-reloaded a {background: #000;padding: 5px 10px;}
 
-.cat-brief .brief-about-cat-reloaded a span {width: 30px;height: 30px;font-size: 15px;background: transparent;display: inline-block;padding: 5px;border: 2px solid #fff;border-radius: 50%;}
+.cat-brief .brief-about-cat-reloaded a span {
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+    background: transparent;
+    display: inline-block;
+    padding: 5px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
 
-.cat-brief .brief-about-cat-reloaded .cat-reloded-links ul{list-style: none;width: fit-content;margin: auto;padding-top: 20px;padding-left: 0;flex-wrap: nowrap;}
+.cat-brief .brief-about-cat-reloaded .cat-reloded-links ul {
+    list-style: none;
+    width: fit-content;
+    margin: auto;
+    padding-top: 20px;
+    padding-left: 0;
+    flex-wrap: nowrap;
+}
 
 .cat-brief .brief-about-cat-reloaded .cat-reloded-links ul li a {background: transparent;}
 
 .cat-brief .brief-about-cat-reloaded .cat-reloded-links ul li a span {text-align: center;}
-/* --------------------------------------- footer ---------------------------------------  */
-footer{background: #1b1a1a; padding: 10px;}
 
-footer p{text-align: center;color: #fff;font-size: 20px;text-transform: capitalize;margin: 0;}
+/* --------------------------------------- footer ---------------------------------------  */
+footer {background: #1b1a1a;padding: 10px;}
+
+footer p {text-align: center;color: #fff;font-size: 20px;text-transform: capitalize;margin: 0;}
+
 /* --------------------------------------- responsive for navbar header   ---------------------------------------  */
 @media only screen and (max-width: 768px) {
     .navbar-header label {display: block;}
+
     .navbar-header .navbar-list {display: none;width: 100%;text-align: center;}
+
     .navbar-header .navbar-list ul li {width: 100%;padding-bottom: 10px;margin: 5px;}
+
     .navbar-header .navbar-list ul li a {margin: 0;letter-spacing: 3px;word-spacing: 5px}
+
     #toggele:checked+.navbar-list {display: block;margin-top: 5px;}
+
     .slider-title {padding: 10em 0 13em 0;}
 }
 /* --------------------------------------- responsive for about scope    ---------------------------------------  */
@@ -205,48 +268,54 @@ footer p{text-align: center;color: #fff;font-size: 20px;text-transform: capitali
 /* --------------------------------------- responsive for speakers    ---------------------------------------  */
 @media only screen and (max-width: 768px) {
     .speakers .speaker-header h3 {font-size: 20px;}
+
     .speakers .team-cards .card {width: 45%}
 }
 /* --------------------------------------- responsive for scheuler    ---------------------------------------  */
-@media only screen and (min-width: 300px) and  (max-width: 992px){
-    .scheduler .schedule-header h4{font-size: 20px;}
+@media only screen and (min-width: 300px) and (max-width: 992px) {
+    .scheduler .schedule-header h4 {font-size: 20px;}
 
-    .scheduler .event .event-days{width: 100%;}
+    .scheduler .event .event-days {width: 100%;}
 
-    .scheduler .event .event-days a{font-size: 14px;}
+    .scheduler .event .event-days a {font-size: 14px;}
 
     .scheduler .event .event-speakers span.line-in-center,
     .scheduler .event .event-speakers .schedule .icon,
     .scheduler .event .event-speakers .schedule span,
-    .scheduler .event .event-speakers .schedule .event-schedule:after{display: none;}
+    .scheduler .event .event-speakers .schedule .event-schedule:after {display: none;}
 
     .scheduler .event .event-speakers .schedule {display: unset;text-align: center}
 
-    .scheduler .event .event-speakers .schedule .event-schedule{width: auto;height: auto;}
+    .scheduler .event .event-speakers .schedule .event-schedule {width: auto;height: auto;}
 
-    .scheduler .event .event-speakers .schedule .event-schedule h4{font-size: 20px;}
+    .scheduler .event .event-speakers .schedule .event-schedule h4 {font-size: 20px;}
 
-    p.time{display: block;margin-bottom: 0;}
+    p.time {display: block;margin-bottom: 0;}
 }
-@media only screen and (min-width: 992px) and (max-width: 1200px){
-    .scheduler .event .event-speakers span.line-in-center{height: 93vh;}
-    .scheduler .event .event-speakers .schedule{padding-left: 0;}
-    .scheduler .event .event-speakers .schedule .event-schedule{width: 390px;}
-    .row-revers{padding-right: 0;}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .scheduler .event .event-speakers span.line-in-center {height: 93vh;}
+
+    .scheduler .event .event-speakers .schedule {padding-left: 0;}
+
+    .scheduler .event .event-speakers .schedule .event-schedule {width: 390px;}
+
+    .row-revers {padding-right: 0;}
 }
 /* --------------------------------------- responsive for roll in    ---------------------------------------  */
-@media only screen and (max-width: 768px){
-    .roll-in .registing h5{font-size: 20px;}
-    .roll-in .registing .buttons a{padding: 10px 20px;font-size: 14px;}
+@media only screen and (max-width: 768px) {
+    .roll-in .registing h5 {font-size: 20px;}
+
+    .roll-in .registing .buttons a {padding: 10px 20px;font-size: 14px;}
 }
 /* --------------------------------------- responsive for location   ---------------------------------------  */
-@media only screen and (max-width: 768px){
-    .location .our-location h6{font-size: 20px;}
+@media only screen and (max-width: 768px) {
+    .location .our-location h6 {font-size: 20px;}
+
     .location .our-location iframe {width: 100%}
 }
 /* --------------------------------------- responsive for cat reloaded site   ---------------------------------------  */
-@media only screen and (max-width: 768px){
-    .cat-brief .brief-about-cat-reloaded p{font-size: 20px;}
-    .cat-brief .brief-about-cat-reloaded a{padding: 5px; font-size: 15px;}
-}
+@media only screen and (max-width: 768px) {
+    .cat-brief .brief-about-cat-reloaded p {font-size: 20px;}
 
+    .cat-brief .brief-about-cat-reloaded a {padding: 5px;font-size: 15px;}
+}
