@@ -2,7 +2,9 @@
 
 * {box-sizing: border-box;}
 
-a {text-decoration: none;}
+a {text-decoration: none;color: #000;}
+
+ul{list-style: none;margin: auto;}
 
 .container {width: 85%;margin: auto;}
 
@@ -22,34 +24,35 @@ a {text-decoration: none;}
     margin-top: 20px;
     font-size: 20px;
     border-radius: 30px;
-    text-transform: capitalize;
     transition: all .3s ease-out;
 }
 .main-button:hover {transform: translateY(-10px);box-shadow: 0px 15px 20px rgba(0, 0, 0, .3);}
 
+/* group elements */
+.navbar-header p,
+.about-scope h2,
+.about-scope .cat-scope,
+.speakers h3,
+.scheduler .event .event-days a.day2,
+.scheduler .event .event-speakers span i,
+.scheduler h5,
+.scheduler .icon,
+.roll-in h5  {
+    color: #800;
+}
+
 /* --------------------------------------- slider ---------------------------------------  */
-.slider {background: url(../images/lecture.jpg)/*, #541f1f*/;background-size: cover;background-position: center;background-blend-mode: overlay;}
-.slider .overlay {background-color: rgba(128, 0, 0, 0.82);}
+.slider {background: url(../images/lecture.jpg);background-size: cover;background-position: center;}
+.slider .overlay {background-color: #800000d1;}
 .navbar-header {padding-top: 15px;}
 
-.navbar-header .navbar-logo a p {
-    color: #bf0000;
-    font-size: 25px;
-    font-weight: 500;
-    margin: 0;
-    background: #fff;
-    width: fit-content;
-    padding: 12px;
-    transition: all .3s ease-out
-}
+.navbar-header p {font-size: 25px;font-weight: 500;margin: 0;background: #fff;width: fit-content;padding: 12px;transition: all .3s ease-out}
 
 .navbar-header .navbar-logo a p:hover {transform: scale(.9);}
 
 .navbar-header .navbar-logo a p span {color: #000;}
 
 .navbar-header label {font-size: 30px;color: #fff;cursor: pointer}
-
-.navbar-header .navbar-list ul {list-style: none;margin: 0;}
 
 .navbar-header .navbar-list ul li {display: inline;}
 
@@ -83,28 +86,27 @@ a {text-decoration: none;}
 
 .slider-title {color: #fff;text-align: center;padding: 8em 11em 11em;font-family: 'Francois One', sans-serif;}
 
-.slider-title h1 {margin: 0;font-weight: 100;text-transform: capitalize;font-size: 30px;}
+.slider-title h1 {margin: 0;font-weight: 100;font-size: 30px;}
 
 .slider-title h1 span {color: #000;}
 
-.slider-title p {text-transform: capitalize;font-size: 25px;margin: 15px;}
+.slider-title p {font-size: 25px;margin: 15px;}
 
 /* --------------------------------------- about scope ---------------------------------------  */
 .about-scope {transform: translateY(-40px);}
 
 .about-scope .about-event {text-align: center;padding: 25px;background: #fff;box-shadow: -7px 9px 8px #d2d1d1;}
 
-.about-scope .about-event h2 {margin: 0;color: #800;text-transform: capitalize;}
+.about-scope h2 {margin: 0;}
 
-.about-scope .about-event h2 i {padding: 8px}
+.about-scope  h2 i {padding: 8px}
 
-.about-scope .about-event h2 span {color: #000;}
+.about-scope  h2 span {color: #000;}
 
-.about-scope .about-event p {font-size: 30px;line-height: 2;margin-bottom: 0;font-family: 'Yanone Kaffeesatz', sans-serif;}
+.about-scope  p{font-size: 30px;line-height: 2;margin-bottom: 0;font-family: 'Yanone Kaffeesatz',sans-serif;}
 
-.about-scope .about-event .cat-scope {color: #800}
-
-.about-scope .about-event a span {
+.about-scope a span,
+.cat-brief a span {
     width: 30px;
     height: 30px;
     font-size: 15px;
@@ -114,54 +116,43 @@ a {text-decoration: none;}
     border: 2px solid #fff;
     border-radius: 50%;
 }
-
 /* --------------------------------------- speakers---------------------------------------  */
-.speakers .speaker-header h3 {width: fit-content;margin: auto;margin-bottom: 25px;font-size: 35px;color: #800;}
+.speakers h3 {width: fit-content;margin: auto;margin-bottom: 25px;font-size: 35px;}
 
-.speakers .team-cards .card {text-align: center;width: 20%;margin-bottom: 30px;box-shadow: 0 28px 16px -26px black;}
+.speakers .card {text-align: center;width: 20%;margin-bottom: 30px;box-shadow: 0 28px 16px -26px black;}
 
-.speakers .team-cards .card .img-box {height: 250px;background: #800;margin: 0;}
+.speakers .card .img-box {height: 250px;background: #800;margin: 0;}
 
-.speakers .team-cards .card .img-box img {width: 100%;height: 100%;object-fit: cover;transition: all .3s ease-out}
+.speakers .card .img-box img {width: 100%;height: 100%;object-fit: cover;transition: all .3s ease-out}
 
-.speakers .team-cards .card .img-box img:hover {transform: scale3d(.95, .95, 1)}
+.speakers .card .img-box img:hover {transform: scale3d(.95, .95, 1)}
 
-.speakers .team-cards .card .speaker-name p {margin: 0;background: #800;width: 100%;color: #fff;padding: 5px;font-family: 'Salsa', cursive;}
+.speakers .card .speaker-name p{margin: 0;background:#800;width: 100%;color:#fff;padding: 5px;font-family: 'Salsa', cursive;}
 
 /* --------------------------------------- scheduler---------------------------------------  */
 .scheduler {background: #34495e;background-image: linear-gradient(135deg, #F05F57 10%, #360940 100%);}
 
 .scheduler .event-info {padding: 25px 0;}
 
-.scheduler .schedule-header h4 {width: fit-content;color: white;margin: auto;margin-bottom: 20px;font-weight: 100;font-size: 30px;}
+.scheduler h4 {width: fit-content;color: white;margin: auto;margin-bottom: 20px;font-weight: 100;font-size: 30px;}
 
-.scheduler .event .event-days {width: 40%;margin: auto;outline: none;border: none;overflow: hidden;border-radius: 31px;background: #880000;}
+.scheduler .event-days {width: 40%;margin: auto;outline: none;border: none;overflow: hidden;border-radius: 30px;background: #800;}
 
-.scheduler .event .event-days a{width: 50%;text-align: center;background:#800;color:#fff;padding: 10px 20px;font-size: 19px;text-transform: capitalize;}
+.scheduler .event-days a{width: 50%;text-align: center;background:#800;color:#fff;padding: 10px 20px;font-size: 19px;}
 
-.scheduler .event .event-days a.day1 {background: #800;color: #fff;}
+.scheduler .event-days a.day1 {background: #800;color: #fff;}
 
-.scheduler .event .event-days a.day2 {color: #800;background: #fff;}
+.scheduler .event-days a.day2 {background: #fff;}
 
-.scheduler .event .event-speakers span.line-in-center {background: #800;position: absolute;left: 50%;width: 2px;height: 200vh;display: block;}
+.scheduler .event-speakers span.line-in-center {background: #800;position: absolute;left: 50%;width: 2px;height: 200vh;display: block;}
 
-.scheduler .event .event-speakers span i {position: absolute;bottom: 0;left: -4px;font-size: 10px;color: #800;}
+.scheduler .event-speakers span i {position: absolute;bottom: 0;left: -4px;font-size: 10px;}
 
-.scheduler .event .event-speakers .schedule {justify-content: unset;padding-left: 112px;padding-top: 20px;}
+.scheduler .event-speakers .schedule {justify-content: unset;padding-left: 112px;padding-top: 20px;}
 
-.scheduler .event .event-speakers .schedule .event-schedule {
-    width: 400px;
-    margin-right: 0;
-    height: 120px;
-    padding: 15px;
-    background: #FFF;
-    position: relative;
-    border-radius: 6px;
-}
+.scheduler .event-schedule {width: 400px;margin-right: 0;height: 120px;padding: 15px;background: #FFF;position: relative;border-radius: 6px;}
 
-.scheduler .event .event-speakers .schedule .event-schedule h5 {font-size: 25px;font-weight: 100;color: #800;margin: 0;}
-
-.scheduler .event .event-speakers .schedule .event-schedule:after {
+.scheduler .event-schedule:after {
     content: "";
     display: inline-block;
     border-style: solid;
@@ -173,21 +164,11 @@ a {text-decoration: none;}
     transform: rotate(-90deg);
 }
 
-.scheduler .event .event-speakers .schedule .icon {
-    width: 50px;
-    height: 50px;
-    margin-left: 20px;
-    margin-right: 20px;
-    text-align: center;
-    padding: 13px;
-    border-radius: 50%;
-    color: #800;
-    font-size: 25px;
-    background: #fff;
-    z-index: 1;
-}
+.scheduler .event-schedule h5 {font-size: 25px;font-weight: 100;margin: 0;}
 
-.scheduler .event .event-speakers .schedule span {color: #fff;font-size: 22px;}
+.scheduler .schedule .icon {width: 50px;height: 50px;margin: 0 20px;text-align: center;padding: 13px;border-radius: 50%;font-size: 25px;background: #fff;z-index: 1;}
+
+.scheduler .event-speakers .schedule span {color: #fff;font-size: 22px;}
 
 .row-revers {flex-direction: row-reverse;padding-right: 112px;}
 
@@ -196,51 +177,33 @@ a {text-decoration: none;}
 /* --------------------------------------- roll in ---------------------------------------  */
 .roll-in {padding: 30px 0px;}
 
-.roll-in .registing h5 {font-size: 30px;margin: 30px 0;margin-top: 0;text-align: center;color: #800;text-transform: uppercase;}
+.roll-in h5 {font-size: 30px;margin: 30px 0;margin-top: 0;text-align: center;}
 
-.roll-in .registing .buttons {justify-content: space-around;}
+.roll-in .buttons {justify-content: space-around;}
 
-.roll-in .registing .buttons a {padding: 10px 70px;font-size: 25px;}
+.roll-in .buttons a {padding: 10px 70px;font-size: 25px;}
 
-.roll-in .registing .buttons .support {background: #000;}
+.roll-in .buttons .support {background: #000;}
 
 /* --------------------------------------- location ---------------------------------------  */
 .location {background: #1b1a1a;padding: 30px;}
 
-.location .our-location h6{margin-top: 0;font-weight: 100;text-transform: uppercase;margin-bottom: 30px;text-align: center;color:#fff;font-size: 30px;}
+.location h6{margin-top: 0;font-weight: 100;margin-bottom: 30px;text-align: center;color:#fff;font-size: 30px;}
 
-.location .our-location iframe {width: 50%;border-radius: 10px;border: 3px solid #fff;height: 300px;display: block;margin: auto}
+.location iframe {width: 50%;border-radius: 10px;border: 3px solid #fff;height: 300px;display: block;margin: auto}
 
 /* --------------------------------------- cat reloaded site ---------------------------------------  */
 .cat-brief {background: #34495e;background-image: linear-gradient(135deg, #F05F57 10%, #360940 100%);padding: 30px;}
 
-.cat-brief .brief-about-cat-reloaded p {color: #fff;text-align: center;font-size: 25px;margin-top: 0;}
+.cat-brief p {color: #fff;text-align: center;font-size: 25px;margin-top: 0;}
 
-.cat-brief .brief-about-cat-reloaded a {background: #000;padding: 5px 10px;}
+.cat-brief a {background: #000;padding: 5px 10px;}
 
-.cat-brief .brief-about-cat-reloaded a span {
-    width: 30px;
-    height: 30px;
-    font-size: 15px;
-    background: transparent;
-    display: inline-block;
-    padding: 5px;
-    border: 2px solid #fff;
-    border-radius: 50%;
-}
+.cat-brief ul {width: fit-content;padding-top: 20px;padding-left: 0;flex-wrap: nowrap;}
 
-.cat-brief .brief-about-cat-reloaded .cat-reloded-links ul {
-    list-style: none;
-    width: fit-content;
-    margin: auto;
-    padding-top: 20px;
-    padding-left: 0;
-    flex-wrap: nowrap;
-}
+.cat-brief ul li a {background: transparent;}
 
-.cat-brief .brief-about-cat-reloaded .cat-reloded-links ul li a {background: transparent;}
-
-.cat-brief .brief-about-cat-reloaded .cat-reloded-links ul li a span {text-align: center;}
+.cat-brief ul li a span {text-align: center;}
 
 /* --------------------------------------- footer ---------------------------------------  */
 footer {background: #1b1a1a;padding: 10px;}
