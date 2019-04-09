@@ -28,7 +28,8 @@ a {text-decoration: none;}
 .main-button:hover {transform: translateY(-10px);box-shadow: 0px 15px 20px rgba(0, 0, 0, .3);}
 
 /* --------------------------------------- slider ---------------------------------------  */
-.slider {background: url(../images/lecture.jpg), #541f1f;background-size: cover;background-position: center;background-blend-mode: overlay;}
+.slider {background: url(../images/lecture.jpg)/*, #541f1f*/;background-size: cover;background-position: center;background-blend-mode: overlay;}
+.slider .overlay {background-color: rgba(128, 0, 0, 0.82);}
 .navbar-header {padding-top: 15px;}
 
 .navbar-header .navbar-logo a p {
