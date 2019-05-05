@@ -1,5 +1,6 @@
 <!Doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,32 +19,32 @@
     <!-- slider  -->
     <section class="slider">
         <div class="overlay">
-        <div class="container">
-            <nav>
-                <div class="navbar-header display-flex">
-                    <div class="navbar-logo">
-                        <a href="#" title="Scope 15">
-                            <p class="main-font">Scope <span> 15</span></p>
-                        </a>
+            <div class="container">
+                <nav>
+                    <div class="navbar-header display-flex">
+                        <div class="navbar-logo">
+                            <a href="#" title="Scope 15">
+                                <p class="main-font">Scope <span> 15</span></p>
+                            </a>
+                        </div>
+                        <button class="hidden toggele">&#9776;</button>
+                        <div class="navbar-list">
+                            <ul class="display-flex">
+                                <li><a href="#about-scope" title="About"> About</a></li>
+                                <li><a href="#speakers" title="Speakers"> Speakers</a></li>
+                                <li><a href="#schedule" title="Schedule"> Schedule</a></li>
+                                <li><a href="#roll-in" title="Roll in"> Roll in</a></li>
+                                <li><a href="#location" title="Location"> Location</a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <button class="hidden toggele">&#9776;</button>
-                    <div class="navbar-list">
-                        <ul class="display-flex">
-                            <li><a href="#about-scope" title="About"> About</a></li>
-                            <li><a href="#speakers" title="Speakers"> Speakers</a></li>
-                            <li><a href="#schedule" title="Schedule"> Schedule</a></li>
-                            <li><a href="#roll-in" title="Roll in"> Roll in</a></li>
-                            <li><a href="#location" title="Location"> Location</a></li>
-                        </ul>
-                    </div>
+                </nav>
+                <div class="slider-title">
+                    <h1 class="main-font">Scope <span> 15</span></h1>
+                    <p>Are You Ready To Meet The Expets!</p>
                 </div>
-            </nav>
-            <div class="slider-title">
-                <h1 class="main-font">Scope <span> 15</span></h1>
-                <p>Are You Ready To Meet The Expets!</p>
             </div>
         </div>
-    </div>
     </section>
     <!-- about scope -->
     <section class="about-scope" id="about-scope">
@@ -70,7 +71,7 @@
             <div class="speaker-header">
                 <h3 class="main-font"><i class="fas fa-users"></i> Speakers</h3>
             </div>
-                    <!-- first row of cards  -->
+            <!-- first row of cards  -->
 
             <div class="team-cards display-flex">
 
@@ -114,7 +115,7 @@
                     </div>
                 </div>
             </div>
-                    <!-- second row of cards  -->
+            <!-- second row of cards  -->
 
             <div class="team-cards display-flex">
 
@@ -158,7 +159,7 @@
                     </div>
                 </div>
             </div>
-                    <!-- third row of cards  -->
+            <!-- third row of cards  -->
 
             <div class="team-cards display-flex">
 
@@ -205,7 +206,7 @@
         </div>
     </section>
 
-                <!-- scheduler -->
+    <!-- scheduler -->
     <section class="scheduler" id="schedule">
         <div class="container">
             <div class="event-info main-font">
@@ -332,7 +333,7 @@
         <div class="container">
             <div class="our-location ">
                 <h6><i class="fas fa-map-marked-alt"></i> Location</h6>
-                <iframe src="https://www.youtube.com/embed/iMsI2ubL8GA?rel=0" ></iframe>
+                <iframe src="https://www.youtube.com/embed/iMsI2ubL8GA?rel=0"></iframe>
             </div>
         </div>
     </section>
@@ -340,7 +341,8 @@
     <section class="cat-brief">
         <div class="container">
             <div class="brief-about-cat-reloaded main-font">
-                <p><span class="cat-scope" style="color: #000">Cat Reloaded</span> is non-profit foundation focused on computer science and IT especially Open
+                <p><span class="cat-scope" style="color: #000">Cat Reloaded</span> is non-profit foundation focused on
+                    computer science and IT especially Open
                     Source technologies </p>
                 <a class="main-button" href="https://www.facebook.com/CATReloaded/" target="_blank"
                     title="cat reloaded site"><span><i class="fas fa-globe"></i></span> Cat Reloaded Site</a>
@@ -370,13 +372,36 @@
     </footer>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script>
-    $(function (){
-        $('button').on('click', function (){
-            $('.navbar-list').slideToggle();
+        $(function () {
+            $('button').on('click', function () {
+                $('.navbar-list').slideToggle();
+            })
         })
-    })
-    </script>
+        $(document).ready(function () {
+            // Add smooth scrolling to all links
+            $("a").on('click', function (event) {
 
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
 </body>
 
 </html>
